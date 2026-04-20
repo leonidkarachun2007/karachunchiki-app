@@ -8,8 +8,7 @@ function App() {
   return (
     <div className="App">
       <Myheader/>
-      <h1>Проверка</h1>
-      {/* <MainPage/> */}
+      <MainPage/>
       {/* <ProfilePage/> */}
     </div>
   );
