@@ -1,14 +1,16 @@
-import Home from "./pages/Home";
 import './App.css';
+
+import MainPage from './components/MainPage/MainPage';
+import Myheader from './components/Myheader/Myheader';
 import ProfilePage from "./components/ProfilePage/ProfilePage";
 
 function App() {
   return (
     <div className="App">
-      <h1>Steam</h1>
+      <Myheader/>
       <h1>Проверка</h1>
-      <ProfilePage/>
-      <Home/>
+      {/* <MainPage/> */}
+      {/* <ProfilePage/> */}
     </div>
   );
 }
