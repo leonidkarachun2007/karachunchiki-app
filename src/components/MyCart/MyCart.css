@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Inter:wght@400;500&display=swap');
+
+body {
+  background: linear-gradient(90deg, #232934 0%, #1f252d 58%, #24302d 100%);
+  margin: 0;
+  padding: 20px 30px;
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Загальна обгортка */
+.page-wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 150px;
+}
+
+.cart-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+h1 {
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 48px;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.total-badge {
+  border: 2px solid #8f98a0;
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  padding: 6px 18px;
+}
+
+.cart-layout {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.cart-left {
+  flex: 1;
+}
+
+.game-card {
+  display: flex;
+  background-color: #393E46;
+  padding: 16px;
+  gap: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  align-items: flex-start;
+  border-radius: 7px;
+}
+
+.image-container img {
+  width: 120px;
+  height: 152px;
+  object-fit: cover;
+  display: block;
+  border-radius: 3px;
+}
+
+.game-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  height: 152px;
+}
+
+.game-type {
+  background-color: #4E555F;
+  color: #a4b0c1;
+  font-size: 11px;
+  font-family: 'Roboto', sans-serif;
+  padding: 3px 10px;
+  border-radius: 3px;
+  align-self: flex-start;
+  margin-bottom: 4px;
+}
+
+.game-name {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.stats-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.stat-row {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.stat-row span:first-child {
+  color: #ffffff;
+  min-width: 120px;
+}
+
+.review-status {
+  color: #5ba32b;
+}
+
+.stat-row span:last-child:not(.review-status) {
+  color: #c6d4df;
+}
+
+.platform-icons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.platform-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #8f98a0;
+  font-size: 11px;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.platform-item svg {
+  width: 16px;
+  height: 16px;
+  color: #8f98a0;
+  flex-shrink: 0;
+}
+
+.game-actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 152px;
+  min-width: 160px;
+}
+
+.price {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.btn-remove,
+.btn-wishlist {
+  background: none;
+  border: none;
+  color: #8f98a0;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.btn-remove:hover,
+.btn-wishlist:hover {
+  color: #ffffff;
+}
+
+/* Права панель підсумку */
+.cart-summary {
+  width: 280px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-family: 'Roboto', sans-serif;
+}
+
+.summary-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.summary-tax {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+
+.summary-tax span:last-child {
+  color: #ffffff;
+}
+
+.summary-note {
+  font-size: 14px;
+  color: #8f98a0;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  margin: 4px 0 8px 0;
+}
+
+.btn-checkout {
+  width: 100%;
+  padding: 14px;
+  background-color: #7BC74D;
+  border: none;
+  border-radius: 4px;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: background-color 0.15s;
+}
+
+.btn-checkout:hover {
+  background-color: #6dbf32;
+}
+
+.cart-layout {
+  display: flex;
+  gap: 24px;
+  align-items: center; 
+}
