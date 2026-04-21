@@ -1,6 +1,6 @@
 .main {
   min-height: 100vh;
-  padding: 40px 150px 0;
+  padding: 40px 150px 72px;
   background: linear-gradient(90deg, #232934 0%, #1f252d 58%, #24302d 100%);
 }
 
@@ -93,9 +93,97 @@
   color: #ffffff;
 }
 
+.gamesSection {
+  margin-top: 54px;
+}
+
+.titleSection {
+  margin: 0 0 28px;
+  color: #f2f4f6;
+  font-size: 28px;
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+.gamesRow {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+.promoSection {
+  margin-top: 44px;
+}
+
+.promoRow {
+  display: flex;
+  gap: 16px;
+}
+
+.promoCard {
+  width: calc((100% - 32px) / 3);
+  flex: 0 0 calc((100% - 32px) / 3);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.promoCardImage {
+  width: 100%;
+  height: 217px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 12px;
+}
+
+.promoCard:first-child .promoCardImage {
+  object-position: left center;
+}
+
+.promoCard:nth-child(2) .promoCardImage {
+  object-position: left center;
+}
+
+.promoCardBody {
+  padding: 16px 0 0;
+  color: #e9edf1;
+}
+
+.promoCardBody h3 {
+  margin: 0 0 12px;
+  font-size: 18px;
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+.promoCardBody p {
+  margin: 0 0 18px;
+  max-width: 92%;
+  color: #cdd2d8;
+  font-size: 15px;
+  line-height: 1.2;
+}
+
+.promoCardBody button {
+  border: none;
+  border-radius: 7px;
+  background: #393E46;
+  color: #f1f2f4;
+  padding: 12px 16px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.promoCardBody button:hover {
+  background: #575d67;
+}
+
 @media (max-width: 980px) {
   .main {
-    padding: 24px 20px;
+    padding: 24px 20px 56px;
   }
 
   .hero {
@@ -114,5 +202,31 @@
 
   .heroRight {
     border-radius: 0 0 18px 18px;
+  }
+
+  .gamesRow {
+    flex-wrap: wrap;
+    gap: 18px 14px;
+  }
+
+  .promoRow {
+    flex-wrap: wrap;
+    gap: 22px 14px;
+  }
+
+  .promoCard {
+    width: calc((100% - 14px) / 2);
+    flex: 0 0 calc((100% - 14px) / 2);
+  }
+}
+
+@media (max-width: 640px) {
+  .gamesRow {
+    gap: 16px 12px;
+  }
+
+  .promoCard {
+    width: 100%;
+    flex: 0 0 100%;
   }
 }
