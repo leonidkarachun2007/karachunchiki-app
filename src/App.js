@@ -5,7 +5,7 @@ import MyCart from './components/MyCart/MyCart';
 function App() {
   return (
     <div className="App">
-      <MyCart></MyCart>
+      <MyCart/>
     </div>
   );
 }
