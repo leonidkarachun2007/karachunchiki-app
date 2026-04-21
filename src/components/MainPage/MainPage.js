@@ -1,6 +1,37 @@
 import './MainPage.css';
+import GameCard from '../GameCard/GameCard';
 
 function MainPage () {
+    const games = [
+    { id: 1, title: "The End of the Sun", price: 515, image: "/theEndOfTheSun.png" },
+    { id: 2, title: "Apex Legends", price: 0, image: "/apexLegends.jpg" },
+    { id: 3, title: "The WereCleaner", price: 325, image: "/theWereCleaner.png" },
+    { id: 4, title: "Into the Emberlands", price: 355, image: "/intoTheEmberlands.png" },
+    { id: 5, title: "Kingdom Come Deliverance II", price: 1030, image: "/kingdomCome.jpg" },
+    { id: 6, title: "Final Fantasy VII", price: 975, image: "/finalFantasy.jpg" }
+  ];
+
+  const promoCards = [
+    {
+      id: 1,
+      title: 'Fortnite',
+      text: 'Feudal Gotham\'s Dark Knight, Ninja Knight Batman, and the malicious wildcard strike with a vengeance.',
+      image: '/fortniteGotham.jpg'
+    },
+    {
+      id: 2,
+      title: 'Fortnite',
+      text: 'BANG! Take your shot with bounty hunters and bring a fresh crossover vibe straight into the shop.',
+      image: '/fortniteAnime.jpg'
+    },
+    {
+      id: 3,
+      title: 'Fortnite',
+      text: 'A new collab arrives with bold heroes and villains stepping into Fortnite for a limited-time drop.',
+      image: '/fortniteHeroAnime.jpg'
+    }
+  ];
+
   return (
     <div className='main'>
       <div className='hero'>
@@ -23,6 +54,32 @@ function MainPage () {
 
         </div>
       </div>
+
+      <div className='gamesSection'>
+        <h2 className='titleSection'>
+          Discover Something New
+        </h2>
+
+        <div className='gamesRow'>
+          {games.map(game => (<GameCard key={game.id} game={game} />))}
+        </div>
+      </div>
+
+      <div className='promoSection'>
+        <div className='promoRow'>
+          {promoCards.map(card => (
+            <div className='promoCard' key={card.id}>
+              <img className='promoCardImage' src={card.image} alt={card.title} />
+              <div className='promoCardBody'>
+                <h3>{card.title}</h3>
+                <p>{card.text}</p>
+                <button type='button'>See In Shop ↗</button>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
     </div>
 
   );
