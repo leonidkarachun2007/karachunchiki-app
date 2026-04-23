@@ -5,14 +5,18 @@ import Myfooter from './components/Myfooter/Myfooter';
 import MainPage from './components/MainPage/MainPage';
 import Myheader from './components/Myheader/Myheader';
 import ProfilePage from "./components/ProfilePage/ProfilePage";
+import MyWishlist from './components/MyWishlist/MyWishlist';
 
 function App() {
   return (
     <div className="App">
-      <MyCart/>
-      <Myheader/>
+       {/* <Myheader/>  */}
+      {/* <MyCart/> */}
+      <MyWishlist/>
+      {/*
       <MainPage/>
-      <Myfooter/>
+      <Myfooter/> */}
+
       {/* <ProfilePage/> */}
     </div>
   );
