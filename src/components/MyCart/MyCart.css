@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Inter:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Inter:wght@400;500&display=swap');
 
 body {
   background: linear-gradient(90deg, #232934 0%, #1f252d 58%, #24302d 100%);
@@ -257,4 +257,4 @@ h1 {
   display: flex;
   gap: 24px;
   align-items: center; 
-} */
+} 

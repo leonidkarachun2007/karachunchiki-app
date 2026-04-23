@@ -1,4 +1,4 @@
-.header {
+/* .header {
   width: 100%;
   padding: 0;
 }
@@ -214,7 +214,7 @@
 }
 
 /* базовые стили выше рассчитаны на обычный ноутбук / ПК */
-
+/*
 @media (min-width: 1440px) {
   .headerInner {
     min-height: 72px;
@@ -301,4 +301,4 @@
     flex-wrap: wrap;
     justify-content: flex-start;
   }
-}
+} */

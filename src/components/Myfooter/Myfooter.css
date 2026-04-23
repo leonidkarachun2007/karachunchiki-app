@@ -1,4 +1,4 @@
-.footer {
+/* .footer {
   width: 100%;
   margin-top: 0;
   color: #d7dee5;
@@ -167,7 +167,7 @@
 
 /* базовые стили выше рассчитаны на обычный ноутбук / ПК */
 
-@media (min-width: 1440px) {
+/*@media (min-width: 1440px) {
   .footerInner {
     padding-inline: 120px;
   }
@@ -230,4 +230,4 @@
   .footerLinks {
     font-size: 14px;
   }
-}
+} */

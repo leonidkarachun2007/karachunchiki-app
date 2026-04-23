@@ -1,3 +1,20 @@
+body {
+  background: linear-gradient(90deg, #232934 0%, #1f252d 58%, #24302d 100%);
+  margin: 0;
+  padding: 20px 30px;
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+
+.page-wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 150px;
+}
+    
+
 .cart-header {
   display: flex;
   align-items: center;
@@ -25,22 +42,64 @@ h1 {
 
 .notify-banner {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   background-color: #393E46;
   border-radius: 4px;
   overflow: hidden;
-  padding: 12px 16px;
+  padding: 0 16px 0 0;
   gap: 14px;
   max-width: 100%;
   margin-bottom: 16px;
 }
 
-.notify-accent {
-  width: 4px;
-  min-width: 4px;
-  height: 36px;
+.notify-exclamation {
+  width: 18px;
+  margin-left: 0;
+  min-width: 18px;
   background-color: #7BC74D;
-  border-radius: 2px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 900;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sort-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.sort-label {
+  color: #8f98a0;
+  font-size: 13px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.sort-select {
+    
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 13px;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  padding-right: 16px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath fill='%23ffffff' d='M0 0l5 6 5-6z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0px center;
+}
+
+.sort-select option {
+  background-color: #393E46;
+  color: #ffffff;
+  
 }
 
 .notify-content {
@@ -48,6 +107,7 @@ h1 {
   align-items: center;
   gap: 10px;
   flex: 1;
+   padding: 12px 0;
 }
 
 .notify-icon {
@@ -72,7 +132,9 @@ h1 {
   border-radius: 12px;
   position: relative;
   cursor: pointer;
+  align-self: center;
   transition: background-color 0.2s;
+  
 }
 
 .notify-toggle.on {
@@ -222,8 +284,7 @@ h1 {
   align-items: center;
 }
 
-.btn-remove,
-.btn-cart {
+.btn-remove{
   background: none;
   border: none;
   color: #8f98a0;
@@ -236,12 +297,30 @@ h1 {
   transition: color 0.15s;
 }
 
-.btn-remove:hover,
-.btn-cart:hover {
+.btn-cart {
+  background: none;
+  background-color: #7BC74D;
+  border: none;
+  color: #222831;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  padding: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.15s;
+  border-radius: 7px;
+}
+
+.btn-remove:hover {
   color: #ffffff;
 }
 
-/* Права панель підсумку */
+.btn-cart:hover {
+  color: #313131;
+  background-color: #6dbf32;
+}
+
 .cart-summary {
   width: 280px;
   flex-shrink: 0;
