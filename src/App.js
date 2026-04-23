@@ -13,10 +13,10 @@ function App() {
        {/* <Myheader/>  */}
       {/* <MyCart/> */}
       <MyWishlist/>
-      {/*
-      <Myheader/>
-      <MainPage/>
-      <Myfooter/> */}
+      
+      {/* <Myheader/>
+      <MainPage/> */}
+      {/* <Myfooter/>  */}
 
       {/* <ProfilePage/> */}
     </div>

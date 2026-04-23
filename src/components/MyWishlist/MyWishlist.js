@@ -2,6 +2,7 @@ import './MyWishlist.css';
 import { useState } from 'react';
 import { BsWindows } from "react-icons/bs";
 import { FaApple } from 'react-icons/fa';
+import { MdEmail } from 'react-icons/md';
 
 export function MyWishlist() {
   const [isOn, setIsOn] = useState(false);
@@ -13,13 +14,24 @@ export function MyWishlist() {
         <div className="total-badge">UAH 0.00</div>
       </div>
       <div className="notify-banner">
-        <div className="notify-accent" />
+        <div className="notify-exclamation">!</div>
         <div className="notify-content">
+          <MdEmail className="notify-icon" />
           <span>Get notified when your wishlisted games go on sale, or are available for purchase or pre-purchase.</span>
         </div>
         <div className={`notify-toggle ${isOn ? 'on' : ''}`} onClick={() => setIsOn(!isOn)}>
           <div className="notify-toggle-thumb" />
         </div>
+      </div>
+
+      <div className="sort-bar">
+        <span className="sort-label">Sort by:</span>
+        <select className="sort-select">
+          <option>On Sale</option>
+          <option>Name</option>
+          <option>Price</option>
+          <option>Release Date</option>
+        </select>
       </div>
       <div className="cart-layout">
 
