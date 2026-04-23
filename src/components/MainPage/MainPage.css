@@ -1,6 +1,7 @@
 .main {
+  flex: 1;
   min-height: 100vh;
-  padding: 40px 150px 72px;
+  padding: clamp(24px, 3vw, 40px) clamp(20px, 7vw, 150px) 48px;
   background: linear-gradient(90deg, #232934 0%, #1f252d 58%, #24302d 100%);
 }
 
@@ -9,7 +10,7 @@
   align-items: stretch;
   gap: 0;
   width: 100%;
-  height: 554px;
+  min-height: clamp(420px, 38vw, 554px);
 }
 
 .heroLeft img {
@@ -30,14 +31,14 @@
   display: flex;
   flex-direction: column;
   background: #2c313a;
-  padding: 32px 30px 28px;
+  padding: clamp(20px, 2.2vw, 32px) clamp(18px, 2vw, 30px) clamp(20px, 2vw, 28px);
   border-radius: 0 18px 18px 0;
   color: white;
 }
 
 .heroRight img {
   width: 100%;
-  height: 154px;
+  height: clamp(112px, 10vw, 154px);
   object-fit: cover;
   border-radius: 14px;
   margin-bottom: 18px;
@@ -46,7 +47,7 @@
 
 .heroRight h2 {
   margin: 0 0 12px;
-  font-size: 26px;
+  font-size: clamp(20px, 2vw, 26px);
   line-height: 1.1;
   font-weight: 700;
   cursor: default;
@@ -54,7 +55,7 @@
 
 .heroRight p {
   margin: 0 0 28px;
-  font-size: 15px;
+  font-size: clamp(13px, 1.1vw, 15px);
   line-height: 1;
   font-weight: 600;
   color: #f0f1f3;
@@ -100,7 +101,7 @@
 .titleSection {
   margin: 0 0 28px;
   color: #f2f4f6;
-  font-size: 28px;
+  font-size: clamp(24px, 2.2vw, 28px);
   line-height: 1.1;
   font-weight: 700;
 }
@@ -181,15 +182,104 @@
   background: #575d67;
 }
 
+.winterSection {
+  margin-top: 54px;
+}
+
+.winterRow {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+.winterCard {
+  width: calc((100% - 80px) / 6);
+  flex: 0 0 calc((100% - 80px) / 6);
+  min-width: 0;
+  color: #f1f3f5;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.winterCardImage {
+  width: 100%;
+  aspect-ratio: 216 / 287;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.winterCardType {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  line-height: 1.1;
+  color: #aeb6bf;
+}
+
+.winterCard h3 {
+  margin: 0 0 12px;
+  font-size: clamp(16px, 1.2vw, 18px);
+  line-height: 1.15;
+  font-weight: 700;
+  min-height: 42px;
+}
+
+.winterPriceRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.winterDiscount {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 48px;
+  height: 24px;
+  padding: 0 8px;
+  border-radius: 999px;
+  background: #7bc74d;
+  color: #20320e;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.winterPrices {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.winterOldPrice {
+  color: #8d9299;
+  font-size: 13px;
+  line-height: 1;
+  text-decoration: line-through;
+}
+
+.winterNewPrice {
+  color: #eef1f3;
+  font-size: clamp(14px, 1vw, 16px);
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+.winterCard:hover {
+  transform: translateY(-3px);
+}
+
 @media (max-width: 980px) {
   .main {
-    padding: 24px 20px 56px;
+    padding: 24px 20px 40px;
   }
 
   .hero {
     flex-direction: column;
     width: 100%;
-    height: auto;
+    min-height: auto;
   }
 
   .heroLeft {
@@ -218,6 +308,22 @@
     width: calc((100% - 14px) / 2);
     flex: 0 0 calc((100% - 14px) / 2);
   }
+
+  .winterRow {
+    flex-wrap: wrap;
+    gap: 18px 14px;
+  }
+
+  .winterCard {
+    width: calc((100% - 28px) / 3);
+    flex: 0 0 calc((100% - 28px) / 3);
+  }
+}
+
+@media (min-width: 1600px) {
+  .main {
+    padding-inline: clamp(32px, 8vw, 220px);
+  }
 }
 
 @media (max-width: 640px) {
@@ -225,6 +331,91 @@
     gap: 16px 12px;
   }
 
+  .promoCard {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+
+  .winterCard {
+    width: calc((100% - 12px) / 2);
+    flex: 0 0 calc((100% - 12px) / 2);
+  }
+}
+
+/* базовые стили выше рассчитаны на обычный ноутбук / ПК */
+
+@media (min-width: 1440px) {
+  .main {
+    padding-inline: 120px;
+  }
+
+  .hero {
+    min-height: 580px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .main {
+    padding-inline: 180px;
+  }
+
+  .hero {
+    min-height: 620px;
+  }
+
+  .promoCardImage {
+    height: 240px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .main {
+    padding-inline: 32px;
+  }
+
+  .heroRight {
+    flex: 0.92;
+  }
+
+  .gamesRow,
+  .promoRow,
+  .winterRow {
+    gap: 14px;
+  }
+}
+
+@media (max-width: 992px) {
+  .main {
+    padding-inline: 20px;
+  }
+
+  .promoCardBody p {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .titleSection {
+    margin-bottom: 22px;
+  }
+
+  .promoRow {
+    gap: 18px;
+  }
+
+  .winterCard {
+    width: calc((100% - 14px) / 2);
+    flex: 0 0 calc((100% - 14px) / 2);
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    padding: 20px 12px 28px;
+  }
+
+  .card,
+  .winterCard,
   .promoCard {
     width: 100%;
     flex: 0 0 100%;
