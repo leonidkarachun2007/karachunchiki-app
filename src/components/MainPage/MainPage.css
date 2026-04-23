@@ -341,3 +341,83 @@
     flex: 0 0 calc((100% - 12px) / 2);
   }
 }
+
+/* базовые стили выше рассчитаны на обычный ноутбук / ПК */
+
+@media (min-width: 1440px) {
+  .main {
+    padding-inline: 120px;
+  }
+
+  .hero {
+    min-height: 580px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .main {
+    padding-inline: 180px;
+  }
+
+  .hero {
+    min-height: 620px;
+  }
+
+  .promoCardImage {
+    height: 240px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .main {
+    padding-inline: 32px;
+  }
+
+  .heroRight {
+    flex: 0.92;
+  }
+
+  .gamesRow,
+  .promoRow,
+  .winterRow {
+    gap: 14px;
+  }
+}
+
+@media (max-width: 992px) {
+  .main {
+    padding-inline: 20px;
+  }
+
+  .promoCardBody p {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .titleSection {
+    margin-bottom: 22px;
+  }
+
+  .promoRow {
+    gap: 18px;
+  }
+
+  .winterCard {
+    width: calc((100% - 14px) / 2);
+    flex: 0 0 calc((100% - 14px) / 2);
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    padding: 20px 12px 28px;
+  }
+
+  .card,
+  .winterCard,
+  .promoCard {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+}
