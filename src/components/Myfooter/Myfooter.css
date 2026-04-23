@@ -164,3 +164,70 @@
     font-size: 15px;
   }
 }
+
+/* базовые стили выше рассчитаны на обычный ноутбук / ПК */
+
+@media (min-width: 1440px) {
+  .footerInner {
+    padding-inline: 120px;
+  }
+
+  .footerTop,
+  .footerLinks {
+    max-width: 920px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .footerInner {
+    padding-inline: 160px;
+    padding-top: 64px;
+  }
+
+  .footerTop,
+  .footerLinks {
+    max-width: 980px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .footerInner {
+    padding-inline: 28px;
+  }
+
+  .footerTop {
+    gap: 32px;
+  }
+}
+
+@media (max-width: 992px) {
+  .footerInner {
+    padding: 44px 20px 32px;
+  }
+
+  .footerTop,
+  .footerLinks {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .footerInner {
+    padding: 40px 16px 28px;
+  }
+
+  .footerLinks {
+    gap: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .socials {
+    font-size: 26px;
+  }
+
+  .footerText,
+  .footerLinks {
+    font-size: 14px;
+  }
+}
