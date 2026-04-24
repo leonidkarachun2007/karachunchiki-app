@@ -1,1 +1,423 @@
-.MainPage {}
+.main {
+  flex: 1;
+  min-height: 100vh;
+  padding: clamp(24px, 3vw, 40px) clamp(20px, 7vw, 150px) 48px;
+  background: linear-gradient(90deg, #232934 0%, #1f252d 58%, #24302d 100%);
+}
+
+.hero {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  width: 100%;
+  min-height: clamp(420px, 38vw, 554px);
+}
+
+.heroLeft img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 18px 0 0 18px;
+  display: block;
+}
+
+.heroLeft {
+  flex: 1.85;
+  min-height: 0;
+}
+
+.heroRight {
+  flex: 0.78;
+  display: flex;
+  flex-direction: column;
+  background: #2c313a;
+  padding: clamp(20px, 2.2vw, 32px) clamp(18px, 2vw, 30px) clamp(20px, 2vw, 28px);
+  border-radius: 0 18px 18px 0;
+  color: white;
+}
+
+.heroRight img {
+  width: 100%;
+  height: clamp(112px, 10vw, 154px);
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 18px;
+  display: block;
+}
+
+.heroRight h2 {
+  margin: 0 0 12px;
+  font-size: clamp(20px, 2vw, 26px);
+  line-height: 1.1;
+  font-weight: 700;
+  cursor: default;
+}
+
+.heroRight p {
+  margin: 0 0 28px;
+  font-size: clamp(13px, 1.1vw, 15px);
+  line-height: 1;
+  font-weight: 600;
+  color: #f0f1f3;
+  cursor: default;
+}
+
+.heroBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 12px;
+}
+
+.heroBottom span {
+  font-size: 18px;
+  font-weight: 700;
+  color: #7bc74d;
+  cursor: default;
+}
+
+.heroBottom button {
+  background: #8fd157;
+  border: none;
+  padding: 12px 20px;
+  color: #2a3230;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.heroBottom button:hover {
+  background: #a2df6f;
+  color: #ffffff;
+}
+
+.gamesSection {
+  margin-top: 54px;
+}
+
+.titleSection {
+  margin: 0 0 28px;
+  color: #f2f4f6;
+  font-size: clamp(24px, 2.2vw, 28px);
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+.gamesRow {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+.promoSection {
+  margin-top: 44px;
+}
+
+.promoRow {
+  display: flex;
+  gap: 16px;
+}
+
+.promoCard {
+  width: calc((100% - 32px) / 3);
+  flex: 0 0 calc((100% - 32px) / 3);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.promoCardImage {
+  width: 100%;
+  height: 217px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 12px;
+}
+
+.promoCard:first-child .promoCardImage {
+  object-position: left center;
+}
+
+.promoCard:nth-child(2) .promoCardImage {
+  object-position: left center;
+}
+
+.promoCardBody {
+  padding: 16px 0 0;
+  color: #e9edf1;
+}
+
+.promoCardBody h3 {
+  margin: 0 0 12px;
+  font-size: 18px;
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+.promoCardBody p {
+  margin: 0 0 18px;
+  max-width: 92%;
+  color: #cdd2d8;
+  font-size: 15px;
+  line-height: 1.2;
+}
+
+.promoCardBody button {
+  border: none;
+  border-radius: 7px;
+  background: #393E46;
+  color: #f1f2f4;
+  padding: 12px 16px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.promoCardBody button:hover {
+  background: #575d67;
+}
+
+.winterSection {
+  margin-top: 54px;
+}
+
+.winterRow {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+.winterCard {
+  width: calc((100% - 80px) / 6);
+  flex: 0 0 calc((100% - 80px) / 6);
+  min-width: 0;
+  color: #f1f3f5;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.winterCardImage {
+  width: 100%;
+  aspect-ratio: 216 / 287;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.winterCardType {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  line-height: 1.1;
+  color: #aeb6bf;
+}
+
+.winterCard h3 {
+  margin: 0 0 12px;
+  font-size: clamp(16px, 1.2vw, 18px);
+  line-height: 1.15;
+  font-weight: 700;
+  min-height: 42px;
+}
+
+.winterPriceRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.winterDiscount {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 48px;
+  height: 24px;
+  padding: 0 8px;
+  border-radius: 999px;
+  background: #7bc74d;
+  color: #20320e;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.winterPrices {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.winterOldPrice {
+  color: #8d9299;
+  font-size: 13px;
+  line-height: 1;
+  text-decoration: line-through;
+}
+
+.winterNewPrice {
+  color: #eef1f3;
+  font-size: clamp(14px, 1vw, 16px);
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+.winterCard:hover {
+  transform: translateY(-3px);
+}
+
+@media (max-width: 980px) {
+  .main {
+    padding: 24px 20px 40px;
+  }
+
+  .hero {
+    flex-direction: column;
+    width: 100%;
+    min-height: auto;
+  }
+
+  .heroLeft {
+    min-height: auto;
+  }
+
+  .heroLeft img {
+    border-radius: 18px 18px 0 0;
+  }
+
+  .heroRight {
+    border-radius: 0 0 18px 18px;
+  }
+
+  .gamesRow {
+    flex-wrap: wrap;
+    gap: 18px 14px;
+  }
+
+  .promoRow {
+    flex-wrap: wrap;
+    gap: 22px 14px;
+  }
+
+  .promoCard {
+    width: calc((100% - 14px) / 2);
+    flex: 0 0 calc((100% - 14px) / 2);
+  }
+
+  .winterRow {
+    flex-wrap: wrap;
+    gap: 18px 14px;
+  }
+
+  .winterCard {
+    width: calc((100% - 28px) / 3);
+    flex: 0 0 calc((100% - 28px) / 3);
+  }
+}
+
+@media (min-width: 1600px) {
+  .main {
+    padding-inline: clamp(32px, 8vw, 220px);
+  }
+}
+
+@media (max-width: 640px) {
+  .gamesRow {
+    gap: 16px 12px;
+  }
+
+  .promoCard {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+
+  .winterCard {
+    width: calc((100% - 12px) / 2);
+    flex: 0 0 calc((100% - 12px) / 2);
+  }
+}
+
+/* базовые стили выше рассчитаны на обычный ноутбук / ПК */
+
+@media (min-width: 1440px) {
+  .main {
+    padding-inline: 120px;
+  }
+
+  .hero {
+    min-height: 580px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .main {
+    padding-inline: 180px;
+  }
+
+  .hero {
+    min-height: 620px;
+  }
+
+  .promoCardImage {
+    height: 240px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .main {
+    padding-inline: 32px;
+  }
+
+  .heroRight {
+    flex: 0.92;
+  }
+
+  .gamesRow,
+  .promoRow,
+  .winterRow {
+    gap: 14px;
+  }
+}
+
+@media (max-width: 992px) {
+  .main {
+    padding-inline: 20px;
+  }
+
+  .promoCardBody p {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .titleSection {
+    margin-bottom: 22px;
+  }
+
+  .promoRow {
+    gap: 18px;
+  }
+
+  .winterCard {
+    width: calc((100% - 14px) / 2);
+    flex: 0 0 calc((100% - 14px) / 2);
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    padding: 20px 12px 28px;
+  }
+
+  .card,
+  .winterCard,
+  .promoCard {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+}

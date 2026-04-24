@@ -1,10 +1,11 @@
 .ProfilePage {
+    flex: 1;
     display: grid;
     background: linear-gradient(90deg, #232934 0%, #1f252d 58%, #24302d 100%);
     width: 100%;
-    height: 255vh;
+    min-height: 100vh;
     justify-content: center;
-    padding-top: 30px;
+    padding: 30px 20px 40px;
 
 }
 
@@ -249,5 +250,3 @@
     color: white;
 
 }
-
-

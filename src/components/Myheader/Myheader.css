@@ -1,17 +1,28 @@
 .header {
+  width: 100%;
+  padding: 0;
+}
+
+.headerInner {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 24px;
+  min-height: 66px;
+  width: 100%;
   background-image: linear-gradient(to right, #373C43, #25282D);
-  padding: 10px 20px;
+  padding: 0 28px;
   color: white;
+  overflow: hidden;
 }
 
 .leftHeader {
   display: flex;
+  flex: 1;
+  min-width: 0;
   align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
+  gap: clamp(14px, 1.6vw, 22px);
+  flex-wrap: nowrap;
 }
 
 .brand {
@@ -47,23 +58,24 @@
 .nav {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: clamp(12px, 1.4vw, 20px);
+  flex-shrink: 0;
 }
 
-nav a:nth-child(1)
+.nav a:nth-child(1)
 {
     color: #7BC74D;
     cursor: pointer;
     transition: color 0.4s ease;
 }
 
-nav a:nth-child(1):hover
+.nav a:nth-child(1):hover
 {
     color: #EEEEEE;
     cursor: pointer;
 }
 
-nav a {
+.nav a {
   display: flex;
   align-items: center;
   color: #EEEEEE;
@@ -72,7 +84,7 @@ nav a {
   line-height: 1;
 }
 
-nav a:hover {
+.nav a:hover {
   color: #7BC74D;
 }
 
@@ -80,6 +92,8 @@ nav a:hover {
   position: relative;
   display: flex;
   align-items: center;
+  flex: 1;
+  min-width: 0;
 }
 
 .search-icon {
@@ -93,7 +107,8 @@ nav a:hover {
   padding: 8px 8px 8px 34px;
   border-radius: 20px;
   border: none;
-  width: 250px;
+  width: 100%;
+  max-width: clamp(220px, 24vw, 300px);
   background: #393E46;
   color: white;
 }
@@ -106,7 +121,8 @@ nav a:hover {
 .rightHeader {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: clamp(10px, 1vw, 14px);
+  flex-shrink: 0;
 }
 
 .navIcon {
@@ -122,7 +138,7 @@ nav a:hover {
   color: #7BC74D;
 }
 
-button {
+.rightHeader button {
   background-color: #393E46;
   border: none;
   color: white;
@@ -132,7 +148,7 @@ button {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-button:nth-child(6) {
+.rightHeader button:nth-child(6) {
   color: #222831;
   background-color: #7BC74D;
   border: none;
@@ -141,17 +157,148 @@ button:nth-child(6) {
   cursor: pointer;
 }
 
-button:hover {
+.rightHeader button:hover {
   background-color: #4a505a;
 }
 
-button:nth-child(6):hover {
+.rightHeader button:nth-child(6):hover {
   background-color: #9adf6c;
   color: #EEEEEE;
 }
 
+.rightHeader button {
+  white-space: nowrap;
+}
+
+@media (max-width: 1180px) {
+  .headerInner {
+    gap: 16px;
+    padding: 0 18px;
+  }
+
+  .nav {
+    gap: 12px;
+  }
+
+  .searchHeader input {
+    max-width: 220px;
+  }
+}
+
 @media (max-width: 768px) {
+  .header {
+    padding: 0;
+  }
+
+  .headerInner {
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 14px 16px;
+  }
+
+  .leftHeader {
+    flex-wrap: wrap;
+  }
+
   .nav {
     gap: 10px;
+  }
+
+  .searchHeader {
+    width: 100%;
+  }
+
+  .searchHeader input {
+    max-width: none;
+  }
+}
+
+/* базовые стили выше рассчитаны на обычный ноутбук / ПК */
+
+@media (min-width: 1440px) {
+  .headerInner {
+    min-height: 72px;
+    padding-inline: 32px;
+  }
+
+  .searchHeader input {
+    max-width: 340px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .headerInner {
+    min-height: 76px;
+    padding-inline: 40px;
+  }
+
+  .nav {
+    gap: 24px;
+  }
+
+  .searchHeader input {
+    max-width: 380px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .headerInner {
+    gap: 14px;
+    padding-inline: 14px;
+  }
+
+  .leftHeader {
+    gap: 14px;
+  }
+
+  .searchHeader input {
+    max-width: 210px;
+  }
+}
+
+@media (max-width: 992px) {
+  .headerInner {
+    flex-wrap: wrap;
+    padding: 12px 16px;
+  }
+
+  .leftHeader {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .rightHeader {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .searchHeader {
+    width: 100%;
+  }
+
+  .searchHeader input {
+    max-width: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .headerInner {
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .brand {
+    width: 100%;
+  }
+
+  .nav {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .rightHeader {
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
   }
 }
