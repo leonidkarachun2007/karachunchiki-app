@@ -1,7 +1,7 @@
 body {
   background: linear-gradient(90deg, #232934 0%, #1f252d 58%, #24302d 100%);
   margin: 0;
-  padding: 20px 30px;
+  padding: 0;
   font-family: 'Roboto', sans-serif;
   min-height: 100vh;
   box-sizing: border-box;
@@ -11,7 +11,7 @@ body {
 .page-wrapper {
   max-width: 1300px;
   margin: 0 auto;
-  padding: 0 150px;
+  padding: 24px 150px 0;
 }
     
 
