@@ -11,12 +11,12 @@ function App() {
   return (
     <div className="App">
        <Myheader/> 
-      {/* <MyCart/> */}
-      <MyWishlist/>
+      <MyCart/>
+      {/* <MyWishlist/> */}
       
       {/* <Myheader/>
       <MainPage/> */}
-      {/* <Myfooter/>  */}
+      <Myfooter/>
 
       {/* <ProfilePage/> */}
     </div>
