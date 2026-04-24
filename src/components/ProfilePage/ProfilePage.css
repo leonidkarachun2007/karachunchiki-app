@@ -1,7 +1,7 @@
 .ProfilePage {
     flex: 1;
     display: grid;
-    background-color: #222831;
+    background: linear-gradient(90deg, #232934 0%, #1f252d 58%, #24302d 100%);
     width: 100%;
     min-height: 100vh;
     justify-content: center;
