@@ -10,7 +10,7 @@ import MyWishlist from './components/MyWishlist/MyWishlist';
 function App() {
   return (
     <div className="App">
-       {/* <Myheader/>  */}
+       <Myheader/>
       {/* <MyCart/> */}
       <MyWishlist/>
       
