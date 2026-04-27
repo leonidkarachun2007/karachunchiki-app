@@ -7,12 +7,20 @@ import Myheader from './components/Myheader/Myheader';
 import ProfilePage from "./components/ProfilePage/ProfilePage";
 import Support from './components/Support/Support';
 import MyWishlist from './components/MyWishlist/MyWishlist';
+import Achievement from './components/Achievement/Achievement';
+import GameWindow from './components/GameWindow/GameWindow';
 
 function App() {
   return (
     <div className="App">
       <Myheader />
-      <MainPage />
+      {/* <MainPage /> */}
+      {/* <ProfilePage /> */}
+      {/* <Support /> */}
+      {/* <MyCart /> */}
+      {/* <MyWishlist /> */}
+      {/* <Achievement /> */}
+      <GameWindow/>
       <Myfooter />
     </div>
   );
