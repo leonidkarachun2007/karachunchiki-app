@@ -3,30 +3,33 @@
     display: grid;
     background: linear-gradient(90deg, #232934 0%, #1f252d 58%, #24302d 100%);
     width: 100%;
-    min-height: 100vh;
-    justify-content: center;
-    padding: 30px 20px 40px;
+      min-height: 100vh;
+  padding: clamp(24px, 3vw, 40px) clamp(20px, 7vw, 150px) 48px;
+  margin: 0;
+  gap: 43px;
+
 
 }
 
 #container_profile {
     display: flex;
     align-items: center;
-    gap: 200px;
+    gap: 141px;
 
 }
 
 #container_profile2 {
     display: grid;
+    gap: 33px;
 }
 
 #container_profile3 {
     display: grid;
+        gap: 33px;
 }
 
 #container_profile4 {
     display: grid;
-    margin-top: 50px;
 }
 
 .profile {
@@ -43,34 +46,53 @@
     
 }
 
+.text1 {
+    display: grid;
+    gap: 3px;
+}
+
 .level {
     color: white;
     font-weight: bold;
+    font-size: 24px;
+            margin-block-start: auto;
+        margin-block-end: 6px;
 }
 
 .eighteen {
     color: #7BC74D;
+        font-size: 24px;
+                    margin-block-start: auto;
+        margin-block-end: 6px;
+
 }
 
 .nickname {
     color: white;
-    margin-top: -4px;
-    font-size: 39px;
+    font-size: 48px;
+
 }
 
 
 .result {
+    display: grid;
     text-align: center;
+    gap: 8px;
 }
 
 .result_text1 {
     color: #EEEEEECC;
+    font-size: 24px;
+        margin-block-start: auto;
+    margin-block-end: 6px;
 }
 
 .result_text2 {
     color: white;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 34px;
+        margin-block-start: 8px;
+        margin-block-end: auto;
 }
 
 .results {
@@ -85,32 +107,35 @@
 }
 
 .icons img {
-    width: 32%;
+    width: 42px;
+    height: 42px;
 }
 
 
 
 .achievements {
     color: white;
+        font-size: 32px;
 }
 
 .achievements_text1 {
     color: white;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 16px;
+
 }
 
 .achievements_text2 {
     color: white;
     opacity: 70%;
     margin-top: -10px;
-        font-size: 14px;
+     font-size: 14px;
 
 }
 
 .achievements_cards {
     display: flex;
-    gap: 26px;
+    gap: 35px;
 }
 
 .show_more {
@@ -128,6 +153,7 @@
 
 .show_more p {
     color: #7BC74D;
+    font-size: 16px;
 
 }
 
@@ -135,15 +161,13 @@
 
 .game_collection {
     color: white;
+    font-size: 32px;
 }
 
 .game_collection_card {
     background-color: #393E46;
     border-radius: 7px;
-    padding-top: 15px;
-    padding-left: 15px;
-    width: 549px;
-    height: 373px;
+    padding: 15px 15px;
 }
 
 .game_collection_card img {
@@ -152,6 +176,7 @@
 
 .game_collection_card h2 {
     color: white;
+    font-size: 24px;
     
 }
 
@@ -168,7 +193,7 @@
 }
 
 .slider {
-    width: 201px;
+    width: 200.44px;
     height: 17px;
     background-color: #222831;
     border-radius: 100px;
@@ -193,7 +218,7 @@
 
 .game_collection_cards2 {
     display: flex;
-    gap: 70px;
+    gap: 125px;
 }
 
 .game_collection_cards1 {
