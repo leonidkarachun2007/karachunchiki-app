@@ -2,10 +2,11 @@
 
     display: grid;
     background: linear-gradient(90deg, #232934 0%, #1f252d 58%, #24302d 100%);
-    width: 97.73%;
+    width: 100%;
     height: 170vh;
     padding-left: 33px;
-    
+      margin: 0;
+  padding: 0;
 }
 
 

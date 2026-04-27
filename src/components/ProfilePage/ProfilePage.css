@@ -4,8 +4,8 @@
     background: linear-gradient(90deg, #232934 0%, #1f252d 58%, #24302d 100%);
     width: 100%;
     min-height: 100vh;
-    justify-content: center;
-    padding: 30px 20px 40px;
+    padding: clamp(24px, 3vw, 40px) clamp(20px, 7vw, 150px) 48px;
+    margin: 0;
 
 }
 
@@ -71,6 +71,8 @@
     color: white;
     font-weight: bold;
     font-size: 20px;
+        margin-block-start: auto;
+        margin-block-end: -1em;
 }
 
 .results {

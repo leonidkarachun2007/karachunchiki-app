@@ -7,8 +7,6 @@ import Myheader from './components/Myheader/Myheader';
 import ProfilePage from "./components/ProfilePage/ProfilePage";
 import Support from './components/Support/Support';
 import MyWishlist from './components/MyWishlist/MyWishlist';
-import Support from './components/Support/Support';
-import MyWishlist from './components/MyWishlist/MyWishlist';
 
 function App() {
   return (
@@ -16,7 +14,7 @@ function App() {
       <Myheader />
       <MainPage />
       <ProfilePage />
-      <Support />
+      {/* <Support /> */}
       <MyCart />
       <MyWishlist />
       <Myfooter />
