@@ -68,13 +68,6 @@ function Click(index) {
 
       <div className='numbers'>
         <p style={{color: '#7BC74D'}}>1</p>
-        <p>2</p>
-        <p>3</p>
-        <p>4</p>
-        <p>5</p>
-        <p>6</p>
-        <p>...</p>
-        <p>198</p>
       </div>
 
       <div className='next'>
