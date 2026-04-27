@@ -7,18 +7,16 @@ import Myheader from './components/Myheader/Myheader';
 import ProfilePage from "./components/ProfilePage/ProfilePage";
 import Support from './components/Support/Support';
 import MyWishlist from './components/MyWishlist/MyWishlist';
-import Support from './components/Support/Support';
-import MyWishlist from './components/MyWishlist/MyWishlist';
 
 function App() {
   return (
     <div className="App">
       <Myheader />
       <MainPage />
-      <ProfilePage />
-      <Support />
-      <MyCart />
-      <MyWishlist />
+      {/* <ProfilePage /> */}
+      {/* <Support /> */}
+      {/* <MyCart /> */}
+      {/* <MyWishlist /> */}
       <Myfooter />
     </div>
   );
