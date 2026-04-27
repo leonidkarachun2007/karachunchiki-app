@@ -68,7 +68,7 @@ function Click(index) {
 
       <div className='numbers'>
         <p style={{color: '#7BC74D'}}>1</p>
-        <p>lenadaun</p>
+        <p>2</p>
         <p>3</p>
         <p>4</p>
         <p>5</p>
