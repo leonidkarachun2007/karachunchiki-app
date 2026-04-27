@@ -186,6 +186,10 @@
   margin-top: 54px;
 }
 
+.weeklyDealsSection {
+  margin-top: 54px;
+}
+
 .winterRow {
   display: flex;
   gap: 16px;
@@ -271,6 +275,102 @@
   transform: translateY(-3px);
 }
 
+.weeklyDealsRow {
+  display: flex;
+  gap: 22px;
+}
+
+.weeklyDealCard {
+  width: calc((100% - 44px) / 3);
+  flex: 0 0 calc((100% - 44px) / 3);
+  min-width: 0;
+  color: #f1f3f5;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.weeklyDealCard:hover {
+  transform: translateY(-3px);
+}
+
+.weeklyDealMedia {
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+  margin-bottom: 22px;
+}
+
+.weeklyDealImage {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+  display: block;
+}
+
+.weeklyDealBadge {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 8px 16px;
+  background: linear-gradient(90deg, #7bc74d 0%, #b6d59d 100%);
+  color: #f7faf4;
+  font-size: 18px;
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+.weeklyDealCard h3 {
+  margin: 0 0 18px;
+  max-width: 88%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: #eeeeee;
+}
+
+.weeklyDealPriceRow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.weeklyDealDiscount {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 60px;
+  height: 32px;
+  padding: 0 12px;
+  border-radius: 999px;
+  background: #7bc74d;
+  color: #20320e;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.weeklyDealOldPrice {
+  color: #b4b8be;
+  font-size: clamp(18px, 1.4vw, 22px);
+  line-height: 1;
+  font-weight: 700;
+  text-decoration: line-through;
+}
+
+.weeklyDealNewPrice {
+  color: #eef1f3;
+  font-size: clamp(18px, 1.4vw, 22px);
+  line-height: 1;
+  font-weight: 700;
+}
+
 @media (max-width: 980px) {
   .main {
     padding: 24px 20px 40px;
@@ -317,6 +417,16 @@
   .winterCard {
     width: calc((100% - 28px) / 3);
     flex: 0 0 calc((100% - 28px) / 3);
+  }
+
+  .weeklyDealsRow {
+    flex-wrap: wrap;
+    gap: 24px 14px;
+  }
+
+  .weeklyDealCard {
+    width: calc((100% - 14px) / 2);
+    flex: 0 0 calc((100% - 14px) / 2);
   }
 }
 
@@ -379,7 +489,8 @@
 
   .gamesRow,
   .promoRow,
-  .winterRow {
+  .winterRow,
+  .weeklyDealsRow {
     gap: 14px;
   }
 }
@@ -407,6 +518,19 @@
     width: calc((100% - 14px) / 2);
     flex: 0 0 calc((100% - 14px) / 2);
   }
+
+  .weeklyDealCard {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+
+  .weeklyDealImage {
+    height: 240px;
+  }
+
+  .weeklyDealCard h3 {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -416,8 +540,25 @@
 
   .card,
   .winterCard,
-  .promoCard {
+  .promoCard,
+  .weeklyDealCard {
     width: 100%;
     flex: 0 0 100%;
+  }
+
+  .weeklyDealImage {
+    height: 210px;
+  }
+
+  .weeklyDealBadge {
+    font-size: 16px;
+  }
+
+  .weeklyDealCard h3 {
+    max-width: 100%;
+  }
+
+  .weeklyDealPriceRow {
+    gap: 10px;
   }
 }

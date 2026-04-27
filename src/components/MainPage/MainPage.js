@@ -41,6 +41,33 @@ function MainPage () {
     { id: 6, title: 'FARCRY 6', oldPrice: 2070, price: 1010, discount: '-50%', image: '/farCry6.jpg' }
   ];
 
+  const weeklyDealCards = [
+    {
+      id: 1,
+      title: 'Teenage Mutant Ninja Turtles: Splintered Fate',
+      oldPrice: 1030,
+      price: 515,
+      discount: '-60%',
+      image: '/ninjaTurtle.jpg'
+    },
+    {
+      id: 2,
+      title: 'Lego: Horizon Adventures',
+      oldPrice: 930,
+      price: 600,
+      discount: '-30%',
+      image: '/legoHorizon.jpg'
+    },
+    {
+      id: 3,
+      title: 'Disney Dreamlight Valley',
+      oldPrice: 550,
+      price: 230,
+      discount: '-60%',
+      image: '/dreamlight.jpg'
+    }
+  ];
+
   return (
     <div className='main'>
       <div className='hero'>
@@ -103,6 +130,25 @@ function MainPage () {
                   <span className='winterOldPrice'>UAH {card.oldPrice}</span>
                   <span className='winterNewPrice'>UAH {card.price}</span>
                 </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className='weeklyDealsSection'>
+        <div className='weeklyDealsRow'>
+          {weeklyDealCards.map(card => (
+            <div className='weeklyDealCard' key={card.id}>
+              <div className='weeklyDealMedia'>
+                <img className='weeklyDealImage' src={card.image} alt={card.title} />
+                <span className='weeklyDealBadge'>Deals of the Week</span>
+              </div>
+              <h3>{card.title}</h3>
+              <div className='weeklyDealPriceRow'>
+                <span className='weeklyDealDiscount'>{card.discount}</span>
+                <span className='weeklyDealOldPrice'>UAH {card.oldPrice}</span>
+                <span className='weeklyDealNewPrice'>UAH {card.price}</span>
               </div>
             </div>
           ))}
