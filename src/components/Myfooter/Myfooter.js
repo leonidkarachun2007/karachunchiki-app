@@ -19,7 +19,7 @@ function Myfooter () {
             </div>
 
             <p className='footerText'>
-              © 2026 MCKarach Daun Corporation. All rights reserved. All trademarks are
+              © 2026 MCKarach Corporation. All rights reserved. All trademarks are
               property of their respective owners in the US and other countries.
               <br />
               VAT included in all prices where applicable.

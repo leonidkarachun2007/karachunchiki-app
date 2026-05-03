@@ -190,6 +190,10 @@
   margin-top: 54px;
 }
 
+.freeGamesSection {
+  margin-top: 54px;
+}
+
 .winterRow {
   display: flex;
   gap: 16px;
@@ -371,6 +375,115 @@
   font-weight: 700;
 }
 
+.freeGamesPanel {
+  background: linear-gradient(180deg, #343943 0%, #292d35 100%);
+  border-radius: 24px;
+  padding: 30px 48px 40px;
+}
+
+.freeGamesTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 34px;
+}
+
+.freeGamesHeading {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  color: #f2f4f6;
+}
+
+.freeGamesIcon {
+  flex: 0 0 auto;
+  font-size: 48px;
+  stroke-width: 1.75;
+}
+
+.freeGamesHeading h2 {
+  margin: 0;
+  font-size: 22px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.freeGamesButton {
+  border: 1px solid #cfd3d8;
+  background: transparent;
+  color: #f0f2f4;
+  min-height: 44px;
+  padding: 0 18px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+
+.freeGamesButton:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: #ffffff;
+}
+
+.freeGamesRow {
+  display: flex;
+  gap: 18px;
+}
+
+.freeGameCard {
+  width: calc((100% - 36px) / 3);
+  flex: 0 0 calc((100% - 36px) / 3);
+  min-width: 0;
+  color: #f1f3f5;
+}
+
+.freeGameMedia {
+  overflow: hidden;
+  border-radius: 14px;
+  margin-bottom: 18px;
+}
+
+.freeGameImage {
+  width: 100%;
+  height: 212px;
+  object-fit: cover;
+  display: block;
+}
+
+.freeGameBadge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 34px;
+  background: #7bc74d;
+  color: #1c231f;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.freeGameBadge.isSoon {
+  background: #444b56;
+  color: #747b86;
+}
+
+.freeGameCard h3 {
+  margin: 0 0 10px;
+  color: #eeeeee;
+  font-size: 20px;
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+.freeGameCard p {
+  margin: 0;
+  color: #cfd3d8;
+  font-size: 16px;
+  line-height: 1.15;
+}
+
 @media (max-width: 980px) {
   .main {
     padding: 24px 20px 40px;
@@ -425,6 +538,20 @@
   }
 
   .weeklyDealCard {
+    width: calc((100% - 14px) / 2);
+    flex: 0 0 calc((100% - 14px) / 2);
+  }
+
+  .freeGamesPanel {
+    padding: 26px 24px 30px;
+  }
+
+  .freeGamesRow {
+    flex-wrap: wrap;
+    gap: 22px 14px;
+  }
+
+  .freeGameCard {
     width: calc((100% - 14px) / 2);
     flex: 0 0 calc((100% - 14px) / 2);
   }
@@ -490,7 +617,8 @@
   .gamesRow,
   .promoRow,
   .winterRow,
-  .weeklyDealsRow {
+  .weeklyDealsRow,
+  .freeGamesRow {
     gap: 14px;
   }
 }
@@ -524,12 +652,27 @@
     flex: 0 0 100%;
   }
 
+  .freeGamesTop {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 24px;
+  }
+
+  .freeGameCard {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+
   .weeklyDealImage {
     height: 240px;
   }
 
   .weeklyDealCard h3 {
     max-width: 100%;
+  }
+
+  .freeGameImage {
+    height: 220px;
   }
 }
 
@@ -541,7 +684,8 @@
   .card,
   .winterCard,
   .promoCard,
-  .weeklyDealCard {
+  .weeklyDealCard,
+  .freeGameCard {
     width: 100%;
     flex: 0 0 100%;
   }
@@ -560,5 +704,44 @@
 
   .weeklyDealPriceRow {
     gap: 10px;
+  }
+
+  .freeGamesPanel {
+    padding: 22px 14px 24px;
+    border-radius: 18px;
+  }
+
+  .freeGamesHeading {
+    gap: 12px;
+  }
+
+  .freeGamesIcon {
+    font-size: 38px;
+  }
+
+  .freeGamesHeading h2 {
+    font-size: 20px;
+  }
+
+  .freeGamesButton {
+    min-height: 40px;
+    padding: 0 16px;
+    font-size: 15px;
+  }
+
+  .freeGameImage {
+    height: 190px;
+  }
+
+  .freeGameBadge {
+    font-size: 16px;
+  }
+
+  .freeGameCard h3 {
+    font-size: 18px;
+  }
+
+  .freeGameCard p {
+    font-size: 15px;
   }
 }
