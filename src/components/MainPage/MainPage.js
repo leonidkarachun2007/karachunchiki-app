@@ -1,5 +1,6 @@
 import './MainPage.css';
 import GameCard from '../GameCard/GameCard';
+import { FiGift } from 'react-icons/fi';
 
 function MainPage () {
     const games = [
@@ -65,6 +66,33 @@ function MainPage () {
       price: 230,
       discount: '-60%',
       image: '/dreamlight.jpg'
+    }
+  ];
+
+  const freeGamesCards = [
+    {
+      id: 1,
+      title: 'Garden Story',
+      status: 'FREE NOW',
+      dateText: 'Free Now - Feb 27 at 05:00 PM',
+      image: '/gardenStory.jpg',
+      isSoon: false
+    },
+    {
+      id: 2,
+      title: 'MAGES OF MYSTRALIA',
+      status: 'FREE NOW',
+      dateText: 'Free Now - Feb 27 at 05:00 PM',
+      image: '/magesOfMystralia.jpg',
+      isSoon: false
+    },
+    {
+      id: 3,
+      title: 'Them’s Fighting Herds',
+      status: 'FREE SOON',
+      dateText: 'Free Soon - Feb 30 at 05:00 PM',
+      image: '/fightinHerds.jpg',
+      isSoon: true
     }
   ];
 
@@ -152,6 +180,31 @@ function MainPage () {
               </div>
             </div>
           ))}
+        </div>
+      </div>
+
+      <div className='freeGamesSection'>
+        <div className='freeGamesPanel'>
+          <div className='freeGamesTop'>
+            <div className='freeGamesHeading'>
+              <FiGift className='freeGamesIcon' />
+              <h2>Free games!</h2>
+            </div>
+            <button className='freeGamesButton' type='button'>View More</button>
+          </div>
+
+          <div className='freeGamesRow'>
+            {freeGamesCards.map(card => (
+              <div className='freeGameCard' key={card.id}>
+                <div className='freeGameMedia'>
+                  <img className='freeGameImage' src={card.image} alt={card.title} />
+                  <span className={`freeGameBadge${card.isSoon ? ' isSoon' : ''}`}>{card.status}</span>
+                </div>
+                <h3>{card.title}</h3>
+                <p>{card.dateText}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 
