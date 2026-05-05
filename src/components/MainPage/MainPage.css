@@ -194,6 +194,26 @@
   margin-top: 54px;
 }
 
+.mobileStoreSection {
+  margin-top: 54px;
+}
+
+.showcaseSection {
+  margin-top: 64px;
+}
+
+.popularGamesSection {
+  margin-top: 64px;
+}
+
+.recentlyUpdatedSection {
+  margin-top: 64px;
+}
+
+.nowOnStoreSection {
+  margin-top: 64px;
+}
+
 .winterRow {
   display: flex;
   gap: 16px;
@@ -484,6 +504,269 @@
   line-height: 1.15;
 }
 
+.mobileStoreCard {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+}
+
+.mobileStoreMedia {
+  flex: 0 0 58%;
+  min-width: 0;
+}
+
+.mobileStoreImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 24px;
+}
+
+.mobileStoreBody {
+  flex: 1;
+  min-width: 0;
+  color: #f2f4f6;
+}
+
+.mobileStoreBody h2 {
+  margin: 0 0 20px;
+  color: #eeeeee;
+  font-size: clamp(28px, 2.4vw, 36px);
+  line-height: 1.08;
+  font-weight: 700;
+}
+
+.mobileStoreBody p {
+  margin: 0 0 34px;
+  max-width: 540px;
+  color: #b9bec6;
+  font-size: clamp(20px, 1.7vw, 26px);
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+.mobileStoreButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  border: none;
+  background: #8fd157;
+  color: #25302f;
+  min-height: 58px;
+  padding: 0 24px;
+  border-radius: 8px;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.mobileStoreButton svg {
+  flex: 0 0 auto;
+  font-size: 22px;
+}
+
+.mobileStoreButton:hover {
+  background: #a2df6f;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.showcaseColumns {
+  display: flex;
+  align-items: flex-start;
+}
+
+.showcaseColumn {
+  width: calc(100% / 3);
+  flex: 0 0 calc(100% / 3);
+  min-width: 0;
+  padding: 0 26px;
+}
+
+.showcaseColumn:first-child {
+  padding-left: 0;
+}
+
+.showcaseColumn:last-child {
+  padding-right: 0;
+}
+
+.showcaseColumn + .showcaseColumn {
+  border-left: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.showcaseTitle {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 26px;
+  color: #f1f3f5;
+  font-size: clamp(22px, 2vw, 28px);
+  line-height: 1.05;
+  font-weight: 700;
+}
+
+.showcaseArrow {
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 400;
+  color: #f1f3f5;
+}
+
+.showcaseList {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.showcaseItem {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  min-height: 146px;
+  padding: 8px;
+  border-radius: 14px;
+  background: transparent;
+  transition: background-color 0.25s ease;
+  cursor: pointer;
+}
+
+.showcaseItem:hover {
+  background: #707885;
+}
+
+.showcaseItemImage {
+  width: 132px;
+  height: 132px;
+  flex: 0 0 132px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+.showcaseItemBody {
+  min-width: 0;
+  color: #f1f3f5;
+}
+
+.showcaseItemBody h3 {
+  margin: 0 0 14px;
+  color: #f1f3f5;
+  font-size: clamp(18px, 1.5vw, 24px);
+  line-height: 1.12;
+  font-weight: 700;
+}
+
+.showcaseSubtitle {
+  margin: 0;
+  color: #e7eaee;
+  font-size: clamp(16px, 1.25vw, 18px);
+  line-height: 1.15;
+  font-weight: 600;
+}
+
+.showcasePriceRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.showcaseDiscount {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 58px;
+  height: 34px;
+  padding: 0 12px;
+  border-radius: 999px;
+  background: #7bc74d;
+  color: #20320e;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.showcaseOldPrice {
+  color: #afb4bb;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 700;
+  text-decoration: line-through;
+}
+
+#container_profile4 {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 26px;
+}
+
+.previous {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+}
+.previous img {
+    opacity: 70%;
+    width: 24px;
+    height: 24px;
+}
+
+.previous p {
+    color: white;
+    opacity: 70%;
+    transition: color 0.25s ease, text-decoration-color 0.25s ease;
+}
+
+.previous:hover p {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.numbers {
+    display: flex;
+    gap: 20px;
+}
+
+.numbers p {
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.25s ease;
+}
+
+.numbers p:hover {
+    color: #7BC74D;
+}
+
+.next {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+}
+.next img {
+
+    width: 24px;
+    height: 24px;
+}
+
+.next p {
+    color: white;
+    transition: color 0.25s ease, text-decoration-color 0.25s ease;
+}
+
+.next:hover p {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+
 @media (max-width: 980px) {
   .main {
     padding: 24px 20px 40px;
@@ -554,6 +837,50 @@
   .freeGameCard {
     width: calc((100% - 14px) / 2);
     flex: 0 0 calc((100% - 14px) / 2);
+  }
+
+  .mobileStoreCard {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+  }
+
+  .mobileStoreMedia {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  .mobileStoreBody p {
+    max-width: 100%;
+  }
+
+  .showcaseColumns {
+    flex-direction: column;
+    gap: 34px;
+  }
+
+  .popularGamesSection {
+    margin-top: 54px;
+  }
+
+  .recentlyUpdatedSection {
+    margin-top: 54px;
+  }
+
+  .nowOnStoreSection {
+    margin-top: 54px;
+  }
+
+  .showcaseColumn {
+    width: 100%;
+    flex: 0 0 100%;
+    padding: 0;
+  }
+
+  .showcaseColumn + .showcaseColumn {
+    border-left: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+    padding-top: 30px;
   }
 }
 
@@ -663,6 +990,24 @@
     flex: 0 0 100%;
   }
 
+  .mobileStoreBody h2 {
+    font-size: 26px;
+  }
+
+  .mobileStoreBody p {
+    font-size: 18px;
+  }
+
+  .showcaseItem {
+    min-height: 128px;
+  }
+
+  .showcaseItemImage {
+    width: 116px;
+    height: 116px;
+    flex-basis: 116px;
+  }
+
   .weeklyDealImage {
     height: 240px;
   }
@@ -742,6 +1087,92 @@
   }
 
   .freeGameCard p {
+    font-size: 15px;
+  }
+
+  .mobileStoreSection {
+    margin-top: 42px;
+  }
+
+  .mobileStoreCard {
+    gap: 20px;
+  }
+
+  .mobileStoreImage {
+    border-radius: 18px;
+  }
+
+  .mobileStoreBody h2 {
+    margin-bottom: 14px;
+    font-size: 22px;
+  }
+
+  .mobileStoreBody p {
+    margin-bottom: 24px;
+    font-size: 16px;
+  }
+
+  .mobileStoreButton {
+    min-height: 48px;
+    padding: 0 18px;
+    font-size: 16px;
+  }
+
+  .mobileStoreButton svg {
+    font-size: 18px;
+  }
+
+  .showcaseSection {
+    margin-top: 42px;
+  }
+
+  .popularGamesSection {
+    margin-top: 42px;
+  }
+
+  .recentlyUpdatedSection {
+    margin-top: 42px;
+  }
+
+  .nowOnStoreSection {
+    margin-top: 42px;
+  }
+
+  .showcaseTitle {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+
+  .showcaseArrow {
+    font-size: 30px;
+  }
+
+  .showcaseItem {
+    gap: 14px;
+    min-height: 112px;
+    padding: 7px;
+    border-radius: 12px;
+  }
+
+  .showcaseItemImage {
+    width: 96px;
+    height: 96px;
+    flex-basis: 96px;
+  }
+
+  .showcaseItemBody h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+
+  .showcaseSubtitle,
+  .showcaseOldPrice {
+    font-size: 15px;
+  }
+
+  .showcaseDiscount {
+    min-width: 52px;
+    height: 30px;
     font-size: 15px;
   }
 }
