@@ -23,15 +23,15 @@ function App() {
       {/* <Myfooter/>  */}
 
       {/* <ProfilePage/> */}
-      <Myheader />
+      {/* <Myheader /> */}
       {/* <MainPage /> */}
       {/* <ProfilePage /> */}
       {/* <Support /> */}
       {/* <MyCart /> */}
       {/* <MyWishlist /> */}
       {/* <Achievement /> */}
-      <GameWindow/>
-      <Myfooter />
+      {/* <GameWindow/> */}
+      {/* <Myfooter /> */}
     </div>
   );
 }
