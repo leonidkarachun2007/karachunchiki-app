@@ -10,6 +10,7 @@ import MyWishlist from './components/MyWishlist/MyWishlist';
 import Registration from './components/Registration/Registration';
 import Achievement from './components/Achievement/Achievement';
 import GameWindow from './components/GameWindow/GameWindow';
+import News from './components/News/News';
 
 function App() {
   return (
@@ -17,20 +18,20 @@ function App() {
        {/* <Myheader/> */}
       {/* <MyCart/> */}
       {/* <MyWishlist/> */}
-      <Registration/>
+      {/* <Registration/> */}
       {/* <Myheader/>
       <MainPage/> */}
       {/* <Myfooter/>  */}
 
       {/* <ProfilePage/> */}
       <Myheader />
-      {/* <MainPage /> */}
       {/* <ProfilePage /> */}
       {/* <Support /> */}
       {/* <MyCart /> */}
-      {/* <MyWishlist /> */}
+      <MainPage/>
+      {/* <News/> */}
       {/* <Achievement /> */}
-      <GameWindow/>
+      {/* <GameWindow/> */}
       <Myfooter />
     </div>
   );
