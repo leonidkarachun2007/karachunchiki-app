@@ -16,13 +16,13 @@ function App() {
   return (
     <div className="App">
        {/* <Myheader/> */}
-      {/* <MyCart/> */}
+      <MyCart/>
       {/* <MyWishlist/> */}
       {/* <Registration/> */}
       {/* <Myheader/>
       <MainPage/> */}
       {/* <Myfooter/>  */}
-
+      {/* <SignUp/> */}
       {/* <ProfilePage/> */}
       <Myheader />
       {/* <ProfilePage /> */}
