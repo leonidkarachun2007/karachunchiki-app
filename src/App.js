@@ -10,23 +10,7 @@ import MyWishlist from './components/MyWishlist/MyWishlist';
 import Registration from './components/Registration/Registration';
 import Achievement from './components/Achievement/Achievement';
 import GameWindow from './components/GameWindow/GameWindow';
-import SignUp from './components/SignUp/SignUp';
-
-
-// function Pay() {
-//   // Состояние: false — закрыто, true — открыто
-//   const [isModalOpen, setIsModalOpen] = useState(false);
-
-//   return (
-//     <div className="Pay">
-//       {/* Показываем страницу корзины и передаем ей функцию открытия */}
-//       <MyCart onOpenPayment={() => setIsModalOpen(true)} />
-
-//       {/* Если isModalOpen истинно, рисуем форму оплаты поверх всего */}
-//       {isModalOpen && <PaymentForm onClose={() => setIsModalOpen(false)} />}
-//     </div>
-//   );
-// }
+import News from './components/News/News';
 
 function App() {
   return (
@@ -35,20 +19,20 @@ function App() {
       <MyCart/>
       {/* <MyWishlist/> */}
       {/* <Registration/> */}
-      {/* <Myheader/> */}
-      {/* <MainPage/> */}
+      {/* <Myheader/>
+      <MainPage/> */}
       {/* <Myfooter/>  */}
       {/* <SignUp/> */}
       {/* <ProfilePage/> */}
-      {/* <Myheader /> */}
-      {/* <MainPage /> */}
+      <Myheader />
       {/* <ProfilePage /> */}
       {/* <Support /> */}
       {/* <MyCart /> */}
-      {/* <MyWishlist /> */}
+      <MainPage/>
+      {/* <News/> */}
       {/* <Achievement /> */}
       {/* <GameWindow/> */}
-      {/* <Myfooter /> */}
+      <Myfooter />
     </div>
   );
 }
