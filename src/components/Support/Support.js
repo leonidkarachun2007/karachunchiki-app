@@ -29,14 +29,14 @@ function Click(index) {
 
       <div id='container_support1'>
     <h1>Support</h1>
+        </div>
 
 
-    <div className='support_search'>
+    <div id='container_support2'>
        <FaSearch className="support-search-icon" />
       <input type='text' placeholder='Find help'/>
     </div>
 
-    </div>
 
 
 <div className="faq">
@@ -68,7 +68,7 @@ function Click(index) {
 
       <div className='numbers'>
         <p style={{color: '#7BC74D'}}>1</p>
-        <p>lenadaun</p>
+        <p>2</p>
         <p>3</p>
         <p>4</p>
         <p>5</p>
@@ -85,6 +85,7 @@ function Click(index) {
 
     <div id='container_support4'>
 
+  
     <h1>Have any other questions?</h1>
 
 
@@ -92,6 +93,7 @@ function Click(index) {
     <button className='support_button'>
       <h3>Contact us on our email!</h3>
     </button>
+
 
     
     </div>

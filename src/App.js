@@ -11,13 +11,13 @@ import MyWishlist from './components/MyWishlist/MyWishlist';
 function App() {
   return (
     <div className="App">
-      <Myheader />
-      <MainPage />
+      {/* <Myheader /> */}
+      {/* <MainPage /> */}
       <ProfilePage />
-      {/* <Support /> */}
-      <MyCart />
+      <Support />
+      {/* <MyCart />
       <MyWishlist />
-      <Myfooter />
+      <Myfooter /> */}
     </div>
   );
 }
