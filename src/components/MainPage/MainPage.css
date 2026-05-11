@@ -190,6 +190,30 @@
   margin-top: 54px;
 }
 
+.freeGamesSection {
+  margin-top: 54px;
+}
+
+.mobileStoreSection {
+  margin-top: 54px;
+}
+
+.showcaseSection {
+  margin-top: 64px;
+}
+
+.popularGamesSection {
+  margin-top: 64px;
+}
+
+.recentlyUpdatedSection {
+  margin-top: 64px;
+}
+
+.nowOnStoreSection {
+  margin-top: 64px;
+}
+
 .winterRow {
   display: flex;
   gap: 16px;
@@ -371,6 +395,378 @@
   font-weight: 700;
 }
 
+.freeGamesPanel {
+  background: linear-gradient(180deg, #343943 0%, #292d35 100%);
+  border-radius: 24px;
+  padding: 30px 48px 40px;
+}
+
+.freeGamesTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 34px;
+}
+
+.freeGamesHeading {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  color: #f2f4f6;
+}
+
+.freeGamesIcon {
+  flex: 0 0 auto;
+  font-size: 48px;
+  stroke-width: 1.75;
+}
+
+.freeGamesHeading h2 {
+  margin: 0;
+  font-size: 22px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.freeGamesButton {
+  border: 1px solid #cfd3d8;
+  background: transparent;
+  color: #f0f2f4;
+  min-height: 44px;
+  padding: 0 18px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+
+.freeGamesButton:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: #ffffff;
+}
+
+.freeGamesRow {
+  display: flex;
+  gap: 18px;
+}
+
+.freeGameCard {
+  width: calc((100% - 36px) / 3);
+  flex: 0 0 calc((100% - 36px) / 3);
+  min-width: 0;
+  color: #f1f3f5;
+}
+
+.freeGameMedia {
+  overflow: hidden;
+  border-radius: 14px;
+  margin-bottom: 18px;
+}
+
+.freeGameImage {
+  width: 100%;
+  height: 212px;
+  object-fit: cover;
+  display: block;
+}
+
+.freeGameBadge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 34px;
+  background: #7bc74d;
+  color: #1c231f;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.freeGameBadge.isSoon {
+  background: #444b56;
+  color: #747b86;
+}
+
+.freeGameCard h3 {
+  margin: 0 0 10px;
+  color: #eeeeee;
+  font-size: 20px;
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+.freeGameCard p {
+  margin: 0;
+  color: #cfd3d8;
+  font-size: 16px;
+  line-height: 1.15;
+}
+
+.mobileStoreCard {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+}
+
+.mobileStoreMedia {
+  flex: 0 0 58%;
+  min-width: 0;
+}
+
+.mobileStoreImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 24px;
+}
+
+.mobileStoreBody {
+  flex: 1;
+  min-width: 0;
+  color: #f2f4f6;
+}
+
+.mobileStoreBody h2 {
+  margin: 0 0 20px;
+  color: #eeeeee;
+  font-size: clamp(28px, 2.4vw, 36px);
+  line-height: 1.08;
+  font-weight: 700;
+}
+
+.mobileStoreBody p {
+  margin: 0 0 34px;
+  max-width: 540px;
+  color: #b9bec6;
+  font-size: clamp(20px, 1.7vw, 26px);
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+.mobileStoreButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  border: none;
+  background: #8fd157;
+  color: #25302f;
+  min-height: 58px;
+  padding: 0 24px;
+  border-radius: 8px;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.mobileStoreButton svg {
+  flex: 0 0 auto;
+  font-size: 22px;
+}
+
+.mobileStoreButton:hover {
+  background: #a2df6f;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.showcaseColumns {
+  display: flex;
+  align-items: flex-start;
+}
+
+.showcaseColumn {
+  width: calc(100% / 3);
+  flex: 0 0 calc(100% / 3);
+  min-width: 0;
+  padding: 0 26px;
+}
+
+.showcaseColumn:first-child {
+  padding-left: 0;
+}
+
+.showcaseColumn:last-child {
+  padding-right: 0;
+}
+
+.showcaseColumn + .showcaseColumn {
+  border-left: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.showcaseTitle {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 26px;
+  color: #f1f3f5;
+  font-size: clamp(22px, 2vw, 28px);
+  line-height: 1.05;
+  font-weight: 700;
+}
+
+.showcaseArrow {
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 400;
+  color: #f1f3f5;
+}
+
+.showcaseList {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.showcaseItem {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  min-height: 146px;
+  padding: 8px;
+  border-radius: 14px;
+  background: transparent;
+  transition: background-color 0.25s ease;
+  cursor: pointer;
+}
+
+.showcaseItem:hover {
+  background: #707885;
+}
+
+.showcaseItemImage {
+  width: 132px;
+  height: 132px;
+  flex: 0 0 132px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+.showcaseItemBody {
+  min-width: 0;
+  color: #f1f3f5;
+}
+
+.showcaseItemBody h3 {
+  margin: 0 0 14px;
+  color: #f1f3f5;
+  font-size: clamp(18px, 1.5vw, 24px);
+  line-height: 1.12;
+  font-weight: 700;
+}
+
+.showcaseSubtitle {
+  margin: 0;
+  color: #e7eaee;
+  font-size: clamp(16px, 1.25vw, 18px);
+  line-height: 1.15;
+  font-weight: 600;
+}
+
+.showcasePriceRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.showcaseDiscount {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 58px;
+  height: 34px;
+  padding: 0 12px;
+  border-radius: 999px;
+  background: #7bc74d;
+  color: #20320e;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.showcaseOldPrice {
+  color: #afb4bb;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 700;
+  text-decoration: line-through;
+}
+
+#container_profile4 {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 26px;
+}
+
+.previous {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+}
+.previous img {
+    opacity: 70%;
+    width: 24px;
+    height: 24px;
+}
+
+.previous p {
+    color: white;
+    opacity: 70%;
+    transition: color 0.25s ease, text-decoration-color 0.25s ease;
+}
+
+.previous:hover p {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.numbers {
+    display: flex;
+    gap: 20px;
+}
+
+.numbers p {
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.25s ease;
+}
+
+.numbers p:hover {
+    color: #7BC74D;
+}
+
+.next {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+}
+.next img {
+
+    width: 24px;
+    height: 24px;
+}
+
+.next p {
+    color: white;
+    transition: color 0.25s ease, text-decoration-color 0.25s ease;
+}
+
+.next:hover p {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+
 @media (max-width: 980px) {
   .main {
     padding: 24px 20px 40px;
@@ -427,6 +823,64 @@
   .weeklyDealCard {
     width: calc((100% - 14px) / 2);
     flex: 0 0 calc((100% - 14px) / 2);
+  }
+
+  .freeGamesPanel {
+    padding: 26px 24px 30px;
+  }
+
+  .freeGamesRow {
+    flex-wrap: wrap;
+    gap: 22px 14px;
+  }
+
+  .freeGameCard {
+    width: calc((100% - 14px) / 2);
+    flex: 0 0 calc((100% - 14px) / 2);
+  }
+
+  .mobileStoreCard {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+  }
+
+  .mobileStoreMedia {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  .mobileStoreBody p {
+    max-width: 100%;
+  }
+
+  .showcaseColumns {
+    flex-direction: column;
+    gap: 34px;
+  }
+
+  .popularGamesSection {
+    margin-top: 54px;
+  }
+
+  .recentlyUpdatedSection {
+    margin-top: 54px;
+  }
+
+  .nowOnStoreSection {
+    margin-top: 54px;
+  }
+
+  .showcaseColumn {
+    width: 100%;
+    flex: 0 0 100%;
+    padding: 0;
+  }
+
+  .showcaseColumn + .showcaseColumn {
+    border-left: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+    padding-top: 30px;
   }
 }
 
@@ -490,7 +944,8 @@
   .gamesRow,
   .promoRow,
   .winterRow,
-  .weeklyDealsRow {
+  .weeklyDealsRow,
+  .freeGamesRow {
     gap: 14px;
   }
 }
@@ -524,12 +979,45 @@
     flex: 0 0 100%;
   }
 
+  .freeGamesTop {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 24px;
+  }
+
+  .freeGameCard {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+
+  .mobileStoreBody h2 {
+    font-size: 26px;
+  }
+
+  .mobileStoreBody p {
+    font-size: 18px;
+  }
+
+  .showcaseItem {
+    min-height: 128px;
+  }
+
+  .showcaseItemImage {
+    width: 116px;
+    height: 116px;
+    flex-basis: 116px;
+  }
+
   .weeklyDealImage {
     height: 240px;
   }
 
   .weeklyDealCard h3 {
     max-width: 100%;
+  }
+
+  .freeGameImage {
+    height: 220px;
   }
 }
 
@@ -541,7 +1029,8 @@
   .card,
   .winterCard,
   .promoCard,
-  .weeklyDealCard {
+  .weeklyDealCard,
+  .freeGameCard {
     width: 100%;
     flex: 0 0 100%;
   }
@@ -560,5 +1049,523 @@
 
   .weeklyDealPriceRow {
     gap: 10px;
+  }
+
+  .freeGamesPanel {
+    padding: 22px 14px 24px;
+    border-radius: 18px;
+  }
+
+  .freeGamesHeading {
+    gap: 12px;
+  }
+
+  .freeGamesIcon {
+    font-size: 38px;
+  }
+
+  .freeGamesHeading h2 {
+    font-size: 20px;
+  }
+
+  .freeGamesButton {
+    min-height: 40px;
+    padding: 0 16px;
+    font-size: 15px;
+  }
+
+  .freeGameImage {
+    height: 190px;
+  }
+
+  .freeGameBadge {
+    font-size: 16px;
+  }
+
+  .freeGameCard h3 {
+    font-size: 18px;
+  }
+
+  .freeGameCard p {
+    font-size: 15px;
+  }
+
+  .mobileStoreSection {
+    margin-top: 42px;
+  }
+
+  .mobileStoreCard {
+    gap: 20px;
+  }
+
+  .mobileStoreImage {
+    border-radius: 18px;
+  }
+
+  .mobileStoreBody h2 {
+    margin-bottom: 14px;
+    font-size: 22px;
+  }
+
+  .mobileStoreBody p {
+    margin-bottom: 24px;
+    font-size: 16px;
+  }
+
+  .mobileStoreButton {
+    min-height: 48px;
+    padding: 0 18px;
+    font-size: 16px;
+  }
+
+  .mobileStoreButton svg {
+    font-size: 18px;
+  }
+
+  .showcaseSection {
+    margin-top: 42px;
+  }
+
+  .popularGamesSection {
+    margin-top: 42px;
+  }
+
+  .recentlyUpdatedSection {
+    margin-top: 42px;
+  }
+
+  .nowOnStoreSection {
+    margin-top: 42px;
+  }
+
+  .showcaseTitle {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+
+  .showcaseArrow {
+    font-size: 30px;
+  }
+
+  .showcaseItem {
+    gap: 14px;
+    min-height: 112px;
+    padding: 7px;
+    border-radius: 12px;
+  }
+
+  .showcaseItemImage {
+    width: 96px;
+    height: 96px;
+    flex-basis: 96px;
+  }
+
+  .showcaseItemBody h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+
+  .showcaseSubtitle,
+  .showcaseOldPrice {
+    font-size: 15px;
+  }
+
+  .showcaseDiscount {
+    min-width: 52px;
+    height: 30px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 640px) {
+  .main {
+    padding: 20px 16px 32px;
+  }
+
+  .hero {
+    gap: 0;
+  }
+
+  .heroLeft img {
+    min-height: 220px;
+  }
+
+  .heroRight {
+    padding: 18px 16px 20px;
+  }
+
+  .heroRight h2 {
+    font-size: 24px;
+  }
+
+  .heroRight p {
+    margin-bottom: 18px;
+    font-size: 14px;
+  }
+
+  .heroRight img {
+    height: 120px;
+    margin-bottom: 12px;
+  }
+
+  .heroBottom {
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+
+  .heroBottom button {
+    width: 100%;
+    min-height: 44px;
+    padding: 0 16px;
+    font-size: 15px;
+  }
+
+  .gamesSection,
+  .winterSection,
+  .weeklyDealsSection,
+  .freeGamesSection,
+  .mobileStoreSection,
+  .showcaseSection,
+  .popularGamesSection,
+  .recentlyUpdatedSection,
+  .nowOnStoreSection {
+    margin-top: 42px;
+  }
+
+  .titleSection {
+    margin-bottom: 20px;
+    font-size: 26px;
+  }
+
+  .promoRow,
+  .gamesRow,
+  .winterRow,
+  .weeklyDealsRow,
+  .freeGamesRow {
+    gap: 16px 12px;
+  }
+
+  .promoCardBody h3,
+  .winterCard h3,
+  .freeGameCard h3 {
+    min-height: 0;
+  }
+
+  .promoCardImage,
+  .weeklyDealImage {
+    height: 220px;
+  }
+
+  .promoCardBody {
+    padding-top: 14px;
+  }
+
+  .promoCardBody p {
+    margin-bottom: 14px;
+    font-size: 14px;
+  }
+
+  .promoCardBody button {
+    min-height: 42px;
+    padding: 0 14px;
+    font-size: 14px;
+  }
+
+  .winterCard,
+  .card {
+    width: calc((100% - 12px) / 2);
+    flex: 0 0 calc((100% - 12px) / 2);
+  }
+
+  .weeklyDealCard {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+
+  .weeklyDealMedia {
+    margin-bottom: 16px;
+    border-radius: 16px;
+  }
+
+  .weeklyDealBadge {
+    min-height: 36px;
+    font-size: 16px;
+  }
+
+  .weeklyDealCard h3 {
+    max-width: 100%;
+    margin-bottom: 14px;
+    font-size: 18px;
+  }
+
+  .weeklyDealPriceRow {
+    gap: 10px;
+  }
+
+  .weeklyDealOldPrice,
+  .weeklyDealNewPrice {
+    font-size: 16px;
+  }
+
+  .freeGamesPanel {
+    padding: 20px 16px 24px;
+    border-radius: 18px;
+  }
+
+  .freeGamesTop {
+    margin-bottom: 20px;
+  }
+
+  .freeGamesHeading {
+    gap: 12px;
+  }
+
+  .freeGamesIcon {
+    font-size: 34px;
+  }
+
+  .freeGamesHeading h2 {
+    font-size: 20px;
+  }
+
+  .freeGamesButton {
+    min-height: 40px;
+    padding: 0 16px;
+    font-size: 15px;
+  }
+
+  .freeGameCard {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+
+  .freeGameMedia {
+    margin-bottom: 14px;
+  }
+
+  .freeGameImage {
+    height: 190px;
+  }
+
+  .freeGameBadge {
+    min-height: 32px;
+    font-size: 15px;
+  }
+
+  .freeGameCard p {
+    font-size: 15px;
+  }
+
+  .mobileStoreCard {
+    gap: 18px;
+  }
+
+  .mobileStoreImage {
+    border-radius: 18px;
+  }
+
+  .mobileStoreBody h2 {
+    margin-bottom: 12px;
+    font-size: 22px;
+  }
+
+  .mobileStoreBody p {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+
+  .mobileStoreButton {
+    width: 100%;
+    justify-content: center;
+    min-height: 46px;
+    padding: 0 16px;
+    font-size: 16px;
+  }
+
+  .mobileStoreButton svg {
+    font-size: 18px;
+  }
+
+  .showcaseColumns {
+    gap: 26px;
+  }
+
+  .showcaseColumn + .showcaseColumn {
+    padding-top: 24px;
+  }
+
+  .showcaseTitle {
+    margin-bottom: 18px;
+    font-size: 24px;
+  }
+
+  .showcaseArrow {
+    font-size: 28px;
+  }
+
+  .showcaseList {
+    gap: 14px;
+  }
+
+  .showcaseItem {
+    gap: 12px;
+    min-height: 104px;
+    padding: 7px;
+    border-radius: 12px;
+  }
+
+  .showcaseItemImage {
+    width: 92px;
+    height: 92px;
+    flex-basis: 92px;
+  }
+
+  .showcaseItemBody h3 {
+    margin-bottom: 8px;
+    font-size: 17px;
+  }
+
+  .showcaseSubtitle,
+  .showcaseOldPrice {
+    font-size: 14px;
+  }
+
+  .showcaseDiscount {
+    min-width: 50px;
+    height: 28px;
+    font-size: 14px;
+  }
+
+  #container_profile4 {
+    gap: 12px;
+    margin-top: 22px;
+    flex-wrap: wrap;
+  }
+
+  .numbers {
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .numbers p,
+  .previous p,
+  .next p {
+    font-size: 16px;
+  }
+
+  .previous img,
+  .next img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 420px) {
+  .main {
+    padding: 18px 12px 28px;
+  }
+
+  .heroLeft img {
+    min-height: 190px;
+  }
+
+  .heroRight {
+    padding: 16px 14px 18px;
+  }
+
+  .heroRight h2 {
+    font-size: 22px;
+  }
+
+  .heroRight img {
+    height: 104px;
+  }
+
+  .titleSection {
+    font-size: 24px;
+  }
+
+  .card,
+  .winterCard,
+  .promoCard {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+
+  .card img,
+  .winterCardImage {
+    aspect-ratio: 170 / 228;
+  }
+
+  .promoCardImage,
+  .weeklyDealImage,
+  .freeGameImage {
+    height: 180px;
+  }
+
+  .weeklyDealCard h3 {
+    font-size: 17px;
+  }
+
+  .weeklyDealBadge {
+    font-size: 15px;
+  }
+
+  .weeklyDealOldPrice,
+  .weeklyDealNewPrice {
+    font-size: 15px;
+  }
+
+  .freeGamesPanel {
+    padding: 18px 14px 22px;
+  }
+
+  .mobileStoreBody h2 {
+    font-size: 20px;
+  }
+
+  .mobileStoreBody p {
+    font-size: 15px;
+  }
+
+  .showcaseItem {
+    min-height: 96px;
+    gap: 10px;
+  }
+
+  .showcaseItemImage {
+    width: 82px;
+    height: 82px;
+    flex-basis: 82px;
+  }
+
+  .showcaseItemBody h3 {
+    font-size: 16px;
+  }
+
+  .showcasePriceRow {
+    gap: 8px;
+  }
+
+  .showcaseDiscount {
+    min-width: 46px;
+    height: 26px;
+    padding: 0 10px;
+    font-size: 13px;
+  }
+
+  #container_profile4 {
+    gap: 10px;
+  }
+
+  .numbers {
+    gap: 10px;
+  }
+
+  .numbers p,
+  .previous p,
+  .next p {
+    font-size: 15px;
   }
 }
