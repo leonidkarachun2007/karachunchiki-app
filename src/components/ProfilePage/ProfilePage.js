@@ -1,10 +1,11 @@
 import './ProfilePage.css';
+import { Link } from 'react-router-dom';
 
 export function ProfilePage () {
   return <div className="ProfilePage">
     <div id='container_profile'>
     <div className='profile'>
-    <img src='./image.png' alt='image' />
+    <img src='./image.png' alt='Profile avatar' />
     <div className='text1'>
     <div className='text2'>
     <p className='level'>Level</p>
@@ -69,10 +70,10 @@ export function ProfilePage () {
         </div>
       </div>
 
-      <div className='show_more'>
+      <Link className='show_more' to='/achievements'>
       <p>Show more</p>
       <img src='./tabler-icon-arrow-narrow-right.png' alt='arrow'/>
-    </div>
+    </Link>
     </div>
     <div id='container_profile3'>
       <h1 className='game_collection'>Game collection</h1>
@@ -89,7 +90,7 @@ export function ProfilePage () {
           <img src='./icon-of-tinyrogues2.png' alt='icon of Tiny Rogues2'/>
           <img src='./icon-of-tinyrogues3.png' alt='icon of Tiny Rogues3'/>
         </div>
-        <div>
+        <div className='game_collection_progress'>
           <p>Completed: 70%</p>
           <div className='slider'>
             <div className='slider_active'></div>
@@ -98,7 +99,7 @@ export function ProfilePage () {
         </div>
         <div className='game_collection_result2'>
           <p>53 hours played on record</p>
-          <p style={{marginLeft: '17px'}}>Last played: 3 days ago</p>
+          <p>Last played: 3 days ago</p>
         </div>
         </div>
       </div>
@@ -113,7 +114,7 @@ export function ProfilePage () {
           <img src='./icon-of-hades2.png' alt='icon of Tiny Rogues2'/>
           <img src='./icon-of-hades3.png' alt='icon of Tiny Rogues3'/>
         </div>
-        <div>
+        <div className='game_collection_progress'>
           <p>Completed: 20%</p>
           <div className='slider'>
             <div className='slider_active' style={{width: '40px'}}></div>
@@ -122,7 +123,7 @@ export function ProfilePage () {
         </div>
         <div className='game_collection_result2'>
           <p>20 hours played on record</p>
-          <p style={{marginLeft: '17px'}}>Last played: 6 days ago</p>
+          <p>Last played: 6 days ago</p>
         </div>
         </div>
       </div>
@@ -141,7 +142,7 @@ export function ProfilePage () {
           <img src='./icon-of-mordhau2.png' alt='icon of Tiny Rogues2'/>
           <img src='./icon-of-mordhau3.png' alt='icon of Tiny Rogues3'/>
         </div>
-        <div>
+        <div className='game_collection_progress'>
           <p>Completed: 45%</p>
           <div className='slider'>
             <div className='slider_active' style={{width: '93px'}}></div>
@@ -150,14 +151,14 @@ export function ProfilePage () {
         </div>
         <div className='game_collection_result2'>
           <p>73 hours played on record</p>
-          <p style={{marginLeft: '17px'}}>Last played: 7 days ago</p>
+          <p>Last played: 7 days ago</p>
         </div>
         </div>
       </div>
 
             <div className='game_collection_card'>
         <img src='./teamfotress2.png' alt='Team Fotress 2'/>
-        <div className='game_collection_into_card' style={{gap: '150px'}}>
+        <div className='game_collection_into_card'>
           <div className='game_collection_result1'>
         <h2>Team Fotress 2</h2>
         <div className='game_collection_icons'>
@@ -165,7 +166,7 @@ export function ProfilePage () {
           <img src='./icon-of-teamfotress2-2.png' alt='icon of Tiny Rogues2'/>
           <img src='./icon-of-teamfotress2-3.png' alt='icon of Tiny Rogues3'/>
         </div>
-        <div>
+        <div className='game_collection_progress'>
           <p>Completed: 20%</p>
           <div className='slider'>
             <div className='slider_active' style={{width: '40px'}}></div>
@@ -174,7 +175,7 @@ export function ProfilePage () {
         </div>
         <div className='game_collection_result2'>
           <p>450 hours played on record</p>
-          <p style={{marginLeft: '26px'}}>Last played: 9 days ago</p>
+          <p>Last played: 9 days ago</p>
         </div>
         </div>
       </div>
@@ -185,17 +186,17 @@ export function ProfilePage () {
     
 
             <div className='game_collection_cards2'>
-      <div className='game_collection_card'>
+            <div className='game_collection_card'>
         <img src='./tboir.png' alt='Mordhau'/>
-        <div className='game_collection_into_card' style={{gap: '42px'}}>
+        <div className='game_collection_into_card'>
           <div className='game_collection_result1'>
-        <h2 style={{width: '318px'}}>The Binding Of Isaac Rebirth</h2>
+        <h2>The Binding Of Isaac Rebirth</h2>
         <div className='game_collection_icons'>
           <img src='./icon-of-tboir1.png' alt='icon of Tiny Rogues1'/>
           <img src='./icon-of-tboir2.png' alt='icon of Tiny Rogues2'/>
           <img src='./icon-of-tboir3.png' alt='icon of Tiny Rogues3'/>
         </div>
-        <div>
+        <div className='game_collection_progress'>
           <p>Completed: 23%</p>
           <div className='slider'>
             <div className='slider_active' style={{width: '45px'}}></div>
@@ -204,14 +205,14 @@ export function ProfilePage () {
         </div>
         <div className='game_collection_result2'>
           <p>90 hours played on record</p>
-          <p style={{marginLeft: '11px'}}>Last played: 15 days ago</p>
+          <p>Last played: 15 days ago</p>
         </div>
         </div>
       </div>
 
             <div className='game_collection_card'>
         <img src='./marvelrivals.png' alt='Marvel Rivals'/>
-        <div className='game_collection_into_card' style={{gap: '150px'}}>
+        <div className='game_collection_into_card'>
           <div className='game_collection_result1'>
         <h2>Marvel Rivals</h2>
         <div className='game_collection_icons'>
@@ -219,7 +220,7 @@ export function ProfilePage () {
           <img src='./icon-of-marvelrivals2.png' alt='icon of Tiny Rogues2'/>
           <img src='./icon-of-marvelrivals3.png' alt='icon of Tiny Rogues3'/>
         </div>
-        <div>
+        <div className='game_collection_progress'>
           <p>Completed: 100%</p>
           <div className='slider'>
             <div className='slider_active' style={{width: '197px', borderRadius: '100px', backgroundColor: '#7BC74D'}}></div>
@@ -228,7 +229,7 @@ export function ProfilePage () {
         </div>
         <div className='game_collection_result2'>
           <p>500 hours played on record</p>
-          <p style={{marginLeft: '18px'}}>Last played: 20 days ago</p>
+          <p>Last played: 20 days ago</p>
         </div>
         </div>
       </div>

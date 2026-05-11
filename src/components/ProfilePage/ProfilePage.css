@@ -3,10 +3,11 @@
     display: grid;
     background: linear-gradient(90deg, #232934 0%, #1f252d 58%, #24302d 100%);
     width: 100%;
-      min-height: 100vh;
-  padding: clamp(24px, 3vw, 40px) clamp(20px, 7vw, 150px) 48px;
-  margin: 0;
-  gap: 43px;
+    box-sizing: border-box;
+    min-height: 100vh;
+    padding: 24px 0 48px;
+    margin: 0;
+    gap: 43px;
 
 
 }
@@ -15,21 +16,28 @@
     display: flex;
     align-items: center;
     gap: 141px;
-
+    width: min(1159px, calc(100% - 40px));
+    margin: 0 auto;
 }
 
 #container_profile2 {
     display: grid;
-    gap: 33px;
+    gap: 24px;
+    width: min(1159px, calc(100% - 40px));
+    margin: 0 auto;
 }
 
 #container_profile3 {
     display: grid;
-        gap: 33px;
+    gap: 33px;
+    width: min(1159px, calc(100% - 40px));
+    margin: 0 auto;
 }
 
 #container_profile4 {
     display: grid;
+    width: min(1159px, calc(100% - 40px));
+    margin: 0 auto;
 }
 
 .profile {
@@ -114,116 +122,268 @@
 
 
 .achievements {
+    font-family: 'Roboto', sans-serif;
     color: white;
-        font-size: 32px;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: 0;
+    margin: 0;
 }
 
 .achievements_text1 {
     color: white;
     font-weight: bold;
     font-size: 16px;
-
+    line-height: 1.2;
+    margin: 10px 0 2px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .achievements_text2 {
     color: white;
     opacity: 70%;
-    margin-top: -10px;
-     font-size: 14px;
-
+    font-size: 14px;
+    line-height: 1.25;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .achievements_cards {
-    display: flex;
-    gap: 35px;
+    display: grid;
+    grid-template-columns: repeat(6, 177px);
+    gap: 18px;
+    align-items: start;
+    width: 1152px;
+    max-width: 100%;
+}
+
+.achievements_card {
+    width: 177px;
+    min-width: 0;
+}
+
+.achievements_card img {
+    display: block;
+    width: 177px;
+    height: 177px;
+    object-fit: cover;
+    border-radius: 7px;
 }
 
 .show_more {
-    display: flex;
+    display: inline-flex;
+    align-items: center;
     gap: 7px;
-    margin-top: -23px;
+    width: fit-content;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .show_more img {
     width: 24px;
     height: 24px;
-    margin-top: 15px;
-
 }
 
 .show_more p {
     color: #7BC74D;
     font-size: 16px;
+    margin: 0;
+}
 
+.show_more:hover p {
+    text-decoration: underline;
+    text-underline-offset: 4px;
 }
 
 
 
 .game_collection {
+    font-family: 'Roboto', sans-serif;
     color: white;
+    font-weight: 600;
     font-size: 32px;
+    line-height: 1;
+    letter-spacing: 0;
 }
 
 .game_collection_card {
     background-color: #393E46;
     border-radius: 7px;
-    padding: 15px 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    width: 562px;
+    flex: 0 0 562px;
 }
 
-.game_collection_card img {
+.game_collection_card > img {
+    display: block;
+    width: 532px;
+    height: 196px;
+    object-fit: cover;
     border-radius: 7px;
 }
 
 .game_collection_card h2 {
     color: white;
-    font-size: 24px;
-    
+    font-size: 28px;
+    line-height: 1.1;
+    margin: 13px 0 12px;
 }
 
 .game_collection_card p {
     color: white;
     opacity: 70%;
     font-size: 14px;
+    margin: 0;
 }
 
 
 .game_collection_icons {
     display: flex;
     gap: 15px;
+    margin-bottom: 14px;
+}
+
+.game_collection_icons img {
+    width: 46px;
+    height: 46px;
+    object-fit: cover;
 }
 
 .slider {
-    width: 200.44px;
-    height: 17px;
+    position: relative;
+    width: 236px;
+    max-width: 100%;
+    height: 18px;
     background-color: #222831;
     border-radius: 100px;
-    margin-top: -9px;
-
+    overflow: hidden;
 }
+
 .slider_active {
     position: absolute;
-     width: 140px;
-     height: 13px;
-     background-color: #606976;
-     border-radius: 100px 0px 0px 100px;
-     margin-top: 2px;
-     margin-left: 2px;
+    top: 2px;
+    left: 2px;
+    width: 140px;
+    height: 14px;
+    background-color: #606976;
+    border-radius: 100px;
 }
 
 .game_collection_into_card {
     display: flex;
-    align-items: center;
-    gap: 160px;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.game_collection_result1 {
+    flex: 0 0 252px;
+    min-width: 252px;
+}
+
+.game_collection_progress {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+}
+
+.game_collection_result2 {
+    display: flex;
+    flex: 0 0 250px;
+    min-width: 250px;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+    text-align: right;
+    padding-bottom: 2px;
 }
 
 .game_collection_cards2 {
     display: flex;
-    gap: 125px;
+    gap: 35px;
+    width: 1159px;
+    max-width: 100%;
 }
 
 .game_collection_cards1 {
     display: grid;
-    gap: 70px;
+    gap: 35px;
+    width: 1159px;
+    max-width: 100%;
+}
+
+@media (max-width: 1400px) {
+    .game_collection_card h2 {
+        font-size: 26px;
+    }
+
+    .game_collection_result2 {
+        flex-basis: 220px;
+        min-width: 220px;
+    }
+}
+
+@media (max-width: 1120px) {
+    #container_profile,
+    #container_profile2,
+    #container_profile3,
+    #container_profile4 {
+        width: calc(100% - 32px);
+    }
+
+    .achievements_cards {
+        grid-template-columns: repeat(auto-fit, 177px);
+        width: 100%;
+        gap: 18px;
+    }
+
+    .game_collection_cards2 {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .game_collection_card {
+        width: 100%;
+        flex-basis: auto;
+    }
+
+    .game_collection_card > img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 532 / 196;
+    }
+
+    .game_collection_into_card {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .game_collection_result1,
+    .game_collection_result2 {
+        min-width: 0;
+    }
+
+    .game_collection_result1 {
+        flex-basis: auto;
+    }
+
+    .game_collection_result2 {
+        flex-basis: auto;
+        align-items: flex-start;
+        text-align: left;
+        padding-bottom: 0;
+    }
+
+    .game_collection_cards1 {
+        width: 100%;
+    }
 }
 
 #container_profile4 {
@@ -293,4 +453,22 @@
 .next:hover p {
     text-decoration: underline;
     text-underline-offset: 4px;
+}
+
+@media (max-width: 1200px) {
+    .achievements_cards {
+        grid-template-columns: repeat(auto-fit, 177px);
+    }
+}
+
+@media (max-width: 640px) {
+    .achievements_cards {
+        grid-template-columns: repeat(auto-fit, 177px);
+    }
+}
+
+@media (max-width: 420px) {
+    .achievements_cards {
+        grid-template-columns: repeat(auto-fit, 177px);
+    }
 }

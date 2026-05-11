@@ -1,4 +1,5 @@
 import './Myheader.css';
+import { Link, NavLink } from 'react-router-dom';
 import { FaSearch } from "react-icons/fa";
 import { CgProfile } from "react-icons/cg";
 import { FaRegHeart } from "react-icons/fa6";
@@ -10,15 +11,15 @@ function Myheader () {
     <header className='header'> 
     <div className='headerInner'>
       <div className='leftHeader'>
-        <div className='brand'>
+        <Link className='brand' to='/'>
           <img className='logo' src='/VLogo.png' alt='logo'/>
           <span className='store'>STORE</span>
-        </div>
+        </Link>
 
         <nav className='nav'>
-          <a>Discover</a>
-          <a>Support</a>
-          <a>News</a>
+          <NavLink to='/'>Discover</NavLink>
+          <NavLink to='/support'>Support</NavLink>
+          <NavLink to='/news'>News</NavLink>
         </nav>
 
         <div className='searchHeader'>
@@ -28,12 +29,18 @@ function Myheader () {
       </div>
 
       <div className='rightHeader'>
-        <CgProfile className='navIcon' />
-        <FaRegHeart className='navIcon' />
-        <RiShoppingCart2Line className='navIcon' />
+        <NavLink to='/profile' className='iconLink' aria-label='Profile'>
+          <CgProfile className='navIcon' />
+        </NavLink>
+        <NavLink to='/wishlist' className='iconLink' aria-label='Wishlist'>
+          <FaRegHeart className='navIcon' />
+        </NavLink>
+        <NavLink to='/cart' className='iconLink' aria-label='Cart'>
+          <RiShoppingCart2Line className='navIcon' />
+        </NavLink>
         <TbWorld className='navIcon' />
-        <button>Sign In</button>
-        <button>Download</button>
+        <Link className='headerButton signButton' to='/login'>Sign In</Link>
+        <a className='headerButton downloadButton' href='/' onClick={(event) => event.preventDefault()}>Download</a>
       </div>
     </div>
     </header>
