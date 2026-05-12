@@ -6,9 +6,9 @@
  
 .login-container-signup {
   background-image: linear-gradient(rgba(34, 40, 49, 90%), rgba(123, 199, 77, 30%)),url('../../back.png');
-    background-size: cover;
-    background-position: center top;
-    min-height: 100%;
+  background-size: cover;
+  background-position: center top;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -34,7 +34,6 @@
   max-height: 580px;
   background: linear-gradient(to bottom, #2B2F35, #25282D);
   border-radius: 20px;
-  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
 }
 
 .form-section-signup {
@@ -199,7 +198,8 @@
  
 .btn-signup {
   font-family: 'Roboto', sans-serif;
-  width:65%;
+  width:100%;
+  max-width: 490px;
   height: 83px;
   background: #82CA77;
   color: #222831;

@@ -13,9 +13,31 @@ import Achievement from './components/Achievement/Achievement';
 import GameWindow from './components/GameWindow/GameWindow';
 import News from './components/News/News';
 import SignUp from './components/SignUp/SignUp';
+import AccountConf from './components/AccountConf/AccountConf';
 
 function App() {
   return (
+    <div className="App">
+       <Myheader/>
+        <AccountConf/>
+      <MyCart/>
+      <MyWishlist/>
+      <Registration/>
+      <Myheader/>
+      <MainPage/>
+      <Myfooter/> 
+      <SignUp/>
+      <ProfilePage/>
+      <Myheader />
+      <MainPage />
+      <ProfilePage />
+      <Support />
+      <MyCart />
+      <MyWishlist />
+      <Achievement />
+      <GameWindow/>
+      <Myfooter />
+    </div>
     <BrowserRouter>
       <div className="App">
         <Myheader />
