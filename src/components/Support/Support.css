@@ -140,7 +140,7 @@
     height: 1.5rem;
 }
  
-.previous img { opacity: 0.7; }
+.previous img {  opacity: 60%; }
  
 .previous p,
 .next p {
@@ -148,7 +148,7 @@
     margin: 0;
 }
  
-.previous p { opacity: 0.7; }
+.previous p {  opacity: 60%; }
  
 .numbers {
     display: flex;

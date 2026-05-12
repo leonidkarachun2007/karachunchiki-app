@@ -146,7 +146,7 @@ height: clamp(8rem, 11vw, 11.0625rem);
  
 .achievements_text2 {
     color: white;
-    opacity: 0.7;
+     opacity: 60%;
     font-size: clamp(0.6875rem, 0.9vw, 0.875rem);
     margin: 0;
 }
@@ -250,7 +250,7 @@ height: clamp(8rem, 11vw, 11.0625rem);
  
 .game_collection_card p {
     color: white;
-    opacity: 0.7%;
+    opacity: 60%;
     font-size: clamp(0.9275rem, 0.9vw, 0.8125rem);
     margin: 0;
 }
@@ -309,12 +309,12 @@ height: clamp(8rem, 11vw, 11.0625rem);
     height: 1.5rem;
 }
  
-.previous img { opacity: 0.7; }
+.previous img { opacity: 60%; }
  
 .previous p {
     color: white;
-    opacity: 0.7;
     margin: 0;
+    opacity: 60%;
 }
  
 .next p {
