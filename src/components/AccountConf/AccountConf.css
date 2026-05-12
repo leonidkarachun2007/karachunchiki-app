@@ -1,0 +1,56 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.confirm-container {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(34, 40, 49, 0.9), rgba(123, 199, 77, 0.3)), url('../../back.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-confirm {
+    background: linear-gradient(rgba(34, 40, 49), #25282D);
+    width: 570px;
+    height: 355px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+}
+.create-account {
+  color: white;
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.message {
+  color: #adb5bd;
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 60px;
+}
+ 
+.btn-accept {
+  font-family: 'Roboto', sans-serif;
+  width:100%;
+  max-width: 490px;
+  height: 83px;
+  background: #82CA77;
+  color: #222831;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  transition: background 0.18s, transform 0.1s;
+}
+ 
+.btn-accept:hover  { background: #91cd88; }

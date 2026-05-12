@@ -11,6 +11,7 @@ import Registration from './components/Registration/Registration';
 import Achievement from './components/Achievement/Achievement';
 import GameWindow from './components/GameWindow/GameWindow';
 import SignUp from './components/SignUp/SignUp';
+import AccountConf from './components/AccountConf/AccountConf';
 
 
 // function Pay() {
@@ -31,24 +32,25 @@ import SignUp from './components/SignUp/SignUp';
 function App() {
   return (
     <div className="App">
-       {/* <Myheader/> */}
+       <Myheader/>
+        <AccountConf/>
       <MyCart/>
-      {/* <MyWishlist/> */}
-      {/* <Registration/> */}
-      {/* <Myheader/> */}
-      {/* <MainPage/> */}
-      {/* <Myfooter/>  */}
-      {/* <SignUp/> */}
-      {/* <ProfilePage/> */}
-      {/* <Myheader /> */}
-      {/* <MainPage /> */}
-      {/* <ProfilePage /> */}
-      {/* <Support /> */}
-      {/* <MyCart /> */}
-      {/* <MyWishlist /> */}
-      {/* <Achievement /> */}
-      {/* <GameWindow/> */}
-      {/* <Myfooter /> */}
+      <MyWishlist/>
+      <Registration/>
+      <Myheader/>
+      <MainPage/>
+      <Myfooter/> 
+      <SignUp/>
+      <ProfilePage/>
+      <Myheader />
+      <MainPage />
+      <ProfilePage />
+      <Support />
+      <MyCart />
+      <MyWishlist />
+      <Achievement />
+      <GameWindow/>
+      <Myfooter />
     </div>
   );
 }
