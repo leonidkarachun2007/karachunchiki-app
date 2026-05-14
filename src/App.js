@@ -17,27 +17,6 @@ import AccountConf from './components/AccountConf/AccountConf';
 
 function App() {
   return (
-    <div className="App">
-
-      <Myheader/>
-      {/* <MyCart/> */}
-      {/* <MyWishlist/> */}
-      {/* <Registration/> */}
-      {/* <Myheader/>
-      <MainPage/> */}
-      {/* <Myfooter/>  */}
-
-      {/* <ProfilePage/> */}
-
-      {/* <MainPage /> */}
-      {/* <ProfilePage /> */}
-      {/* <Support /> */}
-      {/* <MyCart /> */}
-      {/* <MyWishlist /> */}
-      {/* <Achievement /> */}
-      <GameWindow/>
-      <Myfooter />
-    </div>
     <BrowserRouter>
       <div className="App">
         <Myheader />
