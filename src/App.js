@@ -14,16 +14,17 @@ import GameWindow from './components/GameWindow/GameWindow';
 function App() {
   return (
     <div className="App">
-       {/* <Myheader/> */}
+
+      <Myheader/>
       {/* <MyCart/> */}
       {/* <MyWishlist/> */}
-      <Registration/>
+      {/* <Registration/> */}
       {/* <Myheader/>
       <MainPage/> */}
       {/* <Myfooter/>  */}
 
       {/* <ProfilePage/> */}
-      <Myheader />
+
       {/* <MainPage /> */}
       {/* <ProfilePage /> */}
       {/* <Support /> */}
