@@ -1,5 +1,6 @@
 import './Registration.css';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export function Registration() {
     const [errors, setErrors] = useState({ name: false, password: false });
@@ -56,7 +57,7 @@ export function Registration() {
 
           <div className="footer-links">
             <span>no account?</span>
-            <a href="#" className="create-link">Create a new one!</a>
+            <Link to="/signup" className="create-link">Create a new one!</Link>
           </div>
         </div>
 

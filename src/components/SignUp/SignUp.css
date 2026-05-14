@@ -1,0 +1,233 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+ 
+.login-container-signup {
+  background-image: linear-gradient(rgba(34, 40, 49, 90%), rgba(123, 199, 77, 30%)),url('../../back.png');
+  background-size: cover;
+  background-position: center top;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;       
+  min-height: 100vh;
+}
+ 
+.login-title-signup {
+   font-family: 'Roboto', sans-serif;
+  width: 100%;
+  max-width: 840px;
+  padding: 0 60px 32px 60px;
+  font-size: 36px;
+  text-align: left;
+}
+ 
+.login-card-signup {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 840px;
+  max-height: 580px;
+  background: linear-gradient(to bottom, #2B2F35, #25282D);
+  border-radius: 20px;
+}
+
+.form-section-signup {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 60px;
+  gap: 20px;
+}
+ 
+.input-group-signup {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 10px;
+}
+ 
+.input-group-signup label {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #eeeeee;
+}
+ 
+.input-group-signup input {
+  width: 100%;
+  height: 61px;
+  padding: 0 14px;
+  background: #60697666;
+  border: 1px solid #4a4a4a;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.checkbox-signup {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 30px;
+  gap: 12px;
+  cursor: pointer;
+  color: #c6d4df;
+  font-size: 16px;
+}
+
+.checkbox-signup p {
+    max-width: 560px;
+    margin: 0;
+  line-height: 1.4;
+}
+
+.checkbox-signup input {
+  display: none;
+}
+
+.checkmark {
+  width: 28px;
+  height: 28px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 10px;
+  top: 6px;
+  width: 6px;
+  height: 12px;
+  border: solid #202020;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.checkbox-signup input:checked + .checkmark::after {
+  display: block;
+}
+
+.checkbox-signup-captcha.captcha-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: #555f6b; 
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+  padding: 12px 15px;
+  width: 300px;
+  height: 74px;
+  box-sizing: border-box;
+  margin-top: 30px;
+  gap: 15px;
+  cursor: pointer;
+  color: #ffffff; 
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+}
+
+.checkbox-signup-captcha input {
+  display: none;
+}
+
+.checkmark-captcha {
+  width: 38px;
+  height: 38px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  flex-shrink: 0;
+  position: relative;
+  border: 1px solid #3c444d;
+}
+
+.checkmark-captcha::after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 13px;
+  top: 7px;
+  width: 9px;
+  height: 15px;
+  border: solid #2196F3; 
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.checkbox-signup-captcha input:checked + .checkmark-captcha::after {
+  display: block;
+}
+
+.captcha-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.captcha-content p {
+  margin: 0;
+  max-width: none;
+}
+
+.captcha-brand {
+  display: flex;
+  align-items: center;
+}
+
+ 
+.input-group-signup input:focus {
+  border-color: #77b900;
+}
+
+.button-row-signup {
+  display: flex;
+  flex-direction: row;
+  gap: 28px;
+  margin-top: 30px;
+}
+ 
+.btn-signup {
+  font-family: 'Roboto', sans-serif;
+  width:100%;
+  max-width: 490px;
+  height: 83px;
+  background: #82CA77;
+  color: #222831;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  transition: background 0.18s, transform 0.1s;
+}
+ 
+.btn-signup:hover  { background: #91cd88; }
+.btn-signup:active { transform: scale(0.98); }
+ 
+.input-group input.input-error {
+  border-color: #e05252;
+  background: rgba(224, 82, 82, 0.08);
+}
+
+.input-group input.input-error:focus {
+  border-color: #e05252;
+}
+
+.input-group label .error-hint {
+  font-size: 13px;
+  font-weight: 400;
+  color: #e05252;
+  text-transform: none;
+  margin-left: 8px;
+}
+

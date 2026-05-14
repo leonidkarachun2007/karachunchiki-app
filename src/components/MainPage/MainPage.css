@@ -1176,3 +1176,396 @@
     font-size: 15px;
   }
 }
+
+@media (max-width: 640px) {
+  .main {
+    padding: 20px 16px 32px;
+  }
+
+  .hero {
+    gap: 0;
+  }
+
+  .heroLeft img {
+    min-height: 220px;
+  }
+
+  .heroRight {
+    padding: 18px 16px 20px;
+  }
+
+  .heroRight h2 {
+    font-size: 24px;
+  }
+
+  .heroRight p {
+    margin-bottom: 18px;
+    font-size: 14px;
+  }
+
+  .heroRight img {
+    height: 120px;
+    margin-bottom: 12px;
+  }
+
+  .heroBottom {
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+
+  .heroBottom button {
+    width: 100%;
+    min-height: 44px;
+    padding: 0 16px;
+    font-size: 15px;
+  }
+
+  .gamesSection,
+  .winterSection,
+  .weeklyDealsSection,
+  .freeGamesSection,
+  .mobileStoreSection,
+  .showcaseSection,
+  .popularGamesSection,
+  .recentlyUpdatedSection,
+  .nowOnStoreSection {
+    margin-top: 42px;
+  }
+
+  .titleSection {
+    margin-bottom: 20px;
+    font-size: 26px;
+  }
+
+  .promoRow,
+  .gamesRow,
+  .winterRow,
+  .weeklyDealsRow,
+  .freeGamesRow {
+    gap: 16px 12px;
+  }
+
+  .promoCardBody h3,
+  .winterCard h3,
+  .freeGameCard h3 {
+    min-height: 0;
+  }
+
+  .promoCardImage,
+  .weeklyDealImage {
+    height: 220px;
+  }
+
+  .promoCardBody {
+    padding-top: 14px;
+  }
+
+  .promoCardBody p {
+    margin-bottom: 14px;
+    font-size: 14px;
+  }
+
+  .promoCardBody button {
+    min-height: 42px;
+    padding: 0 14px;
+    font-size: 14px;
+  }
+
+  .winterCard,
+  .card {
+    width: calc((100% - 12px) / 2);
+    flex: 0 0 calc((100% - 12px) / 2);
+  }
+
+  .weeklyDealCard {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+
+  .weeklyDealMedia {
+    margin-bottom: 16px;
+    border-radius: 16px;
+  }
+
+  .weeklyDealBadge {
+    min-height: 36px;
+    font-size: 16px;
+  }
+
+  .weeklyDealCard h3 {
+    max-width: 100%;
+    margin-bottom: 14px;
+    font-size: 18px;
+  }
+
+  .weeklyDealPriceRow {
+    gap: 10px;
+  }
+
+  .weeklyDealOldPrice,
+  .weeklyDealNewPrice {
+    font-size: 16px;
+  }
+
+  .freeGamesPanel {
+    padding: 20px 16px 24px;
+    border-radius: 18px;
+  }
+
+  .freeGamesTop {
+    margin-bottom: 20px;
+  }
+
+  .freeGamesHeading {
+    gap: 12px;
+  }
+
+  .freeGamesIcon {
+    font-size: 34px;
+  }
+
+  .freeGamesHeading h2 {
+    font-size: 20px;
+  }
+
+  .freeGamesButton {
+    min-height: 40px;
+    padding: 0 16px;
+    font-size: 15px;
+  }
+
+  .freeGameCard {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+
+  .freeGameMedia {
+    margin-bottom: 14px;
+  }
+
+  .freeGameImage {
+    height: 190px;
+  }
+
+  .freeGameBadge {
+    min-height: 32px;
+    font-size: 15px;
+  }
+
+  .freeGameCard p {
+    font-size: 15px;
+  }
+
+  .mobileStoreCard {
+    gap: 18px;
+  }
+
+  .mobileStoreImage {
+    border-radius: 18px;
+  }
+
+  .mobileStoreBody h2 {
+    margin-bottom: 12px;
+    font-size: 22px;
+  }
+
+  .mobileStoreBody p {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+
+  .mobileStoreButton {
+    width: 100%;
+    justify-content: center;
+    min-height: 46px;
+    padding: 0 16px;
+    font-size: 16px;
+  }
+
+  .mobileStoreButton svg {
+    font-size: 18px;
+  }
+
+  .showcaseColumns {
+    gap: 26px;
+  }
+
+  .showcaseColumn + .showcaseColumn {
+    padding-top: 24px;
+  }
+
+  .showcaseTitle {
+    margin-bottom: 18px;
+    font-size: 24px;
+  }
+
+  .showcaseArrow {
+    font-size: 28px;
+  }
+
+  .showcaseList {
+    gap: 14px;
+  }
+
+  .showcaseItem {
+    gap: 12px;
+    min-height: 104px;
+    padding: 7px;
+    border-radius: 12px;
+  }
+
+  .showcaseItemImage {
+    width: 92px;
+    height: 92px;
+    flex-basis: 92px;
+  }
+
+  .showcaseItemBody h3 {
+    margin-bottom: 8px;
+    font-size: 17px;
+  }
+
+  .showcaseSubtitle,
+  .showcaseOldPrice {
+    font-size: 14px;
+  }
+
+  .showcaseDiscount {
+    min-width: 50px;
+    height: 28px;
+    font-size: 14px;
+  }
+
+  #container_profile4 {
+    gap: 12px;
+    margin-top: 22px;
+    flex-wrap: wrap;
+  }
+
+  .numbers {
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .numbers p,
+  .previous p,
+  .next p {
+    font-size: 16px;
+  }
+
+  .previous img,
+  .next img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 420px) {
+  .main {
+    padding: 18px 12px 28px;
+  }
+
+  .heroLeft img {
+    min-height: 190px;
+  }
+
+  .heroRight {
+    padding: 16px 14px 18px;
+  }
+
+  .heroRight h2 {
+    font-size: 22px;
+  }
+
+  .heroRight img {
+    height: 104px;
+  }
+
+  .titleSection {
+    font-size: 24px;
+  }
+
+  .card,
+  .winterCard,
+  .promoCard {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+
+  .card img,
+  .winterCardImage {
+    aspect-ratio: 170 / 228;
+  }
+
+  .promoCardImage,
+  .weeklyDealImage,
+  .freeGameImage {
+    height: 180px;
+  }
+
+  .weeklyDealCard h3 {
+    font-size: 17px;
+  }
+
+  .weeklyDealBadge {
+    font-size: 15px;
+  }
+
+  .weeklyDealOldPrice,
+  .weeklyDealNewPrice {
+    font-size: 15px;
+  }
+
+  .freeGamesPanel {
+    padding: 18px 14px 22px;
+  }
+
+  .mobileStoreBody h2 {
+    font-size: 20px;
+  }
+
+  .mobileStoreBody p {
+    font-size: 15px;
+  }
+
+  .showcaseItem {
+    min-height: 96px;
+    gap: 10px;
+  }
+
+  .showcaseItemImage {
+    width: 82px;
+    height: 82px;
+    flex-basis: 82px;
+  }
+
+  .showcaseItemBody h3 {
+    font-size: 16px;
+  }
+
+  .showcasePriceRow {
+    gap: 8px;
+  }
+
+  .showcaseDiscount {
+    min-width: 46px;
+    height: 26px;
+    padding: 0 10px;
+    font-size: 13px;
+  }
+
+  #container_profile4 {
+    gap: 10px;
+  }
+
+  .numbers {
+    gap: 10px;
+  }
+
+  .numbers p,
+  .previous p,
+  .next p {
+    font-size: 15px;
+  }
+}
