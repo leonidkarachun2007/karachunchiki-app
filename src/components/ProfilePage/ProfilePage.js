@@ -1,4 +1,5 @@
 import './ProfilePage.css';
+import { Link } from 'react-router-dom';
  
 export function ProfilePage () {
   return (
@@ -73,10 +74,10 @@ export function ProfilePage () {
         </div>
       </div>
 
-      <div className='show_more'>
+      <Link className='show_more' to='/achievements'>
       <p>Show more</p>
       <img src='./tabler-icon-arrow-narrow-right.png' alt='arrow'/>
-    </div>
+    </Link>
     </div>
  
       <div id="container_profile3">

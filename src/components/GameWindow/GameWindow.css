@@ -97,9 +97,9 @@
 
 /* ---- Section title ---- */
 .gp-section-title {
-  margin: 0 0 20px;
+  margin: 0 0 28px;
   color: #f2f4f6;
-  font-size: clamp(20px, 1.8vw, 24px);
+  font-size: clamp(24px, 2.2vw, 28px);
   line-height: 1.1;
   font-weight: 700;
 }
@@ -286,10 +286,10 @@
 }
  
 .achievements {
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    font-size: clamp(1.25rem, 2.5vw, 2rem);
-    font-weight: 600;
+    color: #f2f4f6;
+    font-size: clamp(24px, 2.2vw, 28px);
+    line-height: 1.1;
+    font-weight: 700;
     margin: 0;
 }
  
@@ -333,6 +333,7 @@
     align-items: center;
     gap: 0.4375rem;
     margin-top: 0;
+    text-decoration: none;
 }
 
  
