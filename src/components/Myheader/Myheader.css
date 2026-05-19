@@ -3,6 +3,14 @@
   padding: 0;
 }
 
+.mobileMenu {
+  display: none;
+}
+
+.mobileSearch {
+  display: none;
+}
+
 .headerInner {
   display: flex;
   justify-content: space-between;
@@ -160,6 +168,44 @@
   background-color: #7BC74D;
 }
 
+.menuButton {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: #EEEEEE;
+  cursor: pointer;
+}
+
+.burgerLine {
+  display: block;
+  width: 26px;
+  height: 2px;
+  border-radius: 999px;
+  background: currentColor;
+  transform-origin: center;
+  transition: transform 0.28s ease, opacity 0.2s ease;
+}
+
+.menuButton[aria-expanded="true"] .burgerLine:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.menuButton[aria-expanded="true"] .burgerLine:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0.4);
+}
+
+.menuButton[aria-expanded="true"] .burgerLine:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
 .headerButton:hover {
   background-color: #4a505a;
 }
@@ -282,22 +328,204 @@
 
 @media (max-width: 480px) {
   .headerInner {
-    gap: 12px;
-    padding: 12px;
+    min-height: 63px;
+    gap: 10px;
+    padding: 0 10px 0 16px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    overflow: visible;
+  }
+
+  .leftHeader {
+    width: auto;
+    flex: 0 0 auto;
+    min-width: auto;
+    gap: 0;
+    align-items: center;
+    flex-wrap: nowrap;
   }
 
   .brand {
-    width: 100%;
-  }
-
-  .nav {
-    width: 100%;
-    justify-content: space-between;
+    width: auto;
+    flex: 0 0 auto;
+    gap: 10px;
+    min-width: 0;
+    min-height: 28px;
   }
 
   .rightHeader {
+    width: auto;
+    margin-left: auto;
     gap: 10px;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    min-width: 0;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .searchHeaderDesktop {
+    display: none;
+  }
+
+  .mobileSearch {
+    display: block;
+    width: 100%;
+    padding: 38px 16px 0;
+    background: linear-gradient(90deg, #232934 0%, #1f252d 58%, #24302d 100%);
+    box-sizing: border-box;
+  }
+
+  .searchHeaderMobile {
+    width: 100%;
+  }
+
+  .searchHeaderMobile input {
+    width: 100%;
+    min-height: 50px;
+    padding-left: 37px;
+    border-radius: 30px;
+    font-size: 16px;
+    background: #3d434d;
+    max-width: none;
+  }
+
+  .search-icon {
+    left: 12px;
+    font-size: 15px;
+  }
+
+  .downloadButton {
+    display: none;
+  }
+
+  .menuButton {
+    display: inline-flex;
+    flex: 0 0 auto;
+  }
+
+  .mobileMenu {
+    display: none;
+    width: 100%;
+    padding: 0 16px 16px;
+    background-image: linear-gradient(to right, #373C43, #25282D);
+    box-sizing: border-box;
+  }
+
+  .mobileMenu.mobileMenuOpen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding-top: 4px;
+  }
+
+  .mobileMenu a {
+    color: #EEEEEE;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1.1;
+    text-align: center;
+  }
+
+  .mobileMenu a.active,
+  .mobileMenu a:hover {
+    color: #7BC74D;
+  }
+
+  .navIcon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .headerButton {
+    min-height: 39px;
+    padding: 10px 9px;
+    border-radius: 4px;
+    font-size: 15px;
+    line-height: 1;
+  }
+
+  .signButton {
+    background-color: #7BC74D;
+    color: #25302f;
+    min-width: 72px;
+  }
+
+  .signButton:hover {
+    background-color: #92d85e;
+    color: #25302f;
+  }
+
+  .store {
+    font-size: 28px;
+    line-height: 1;
+  }
+
+  .logo {
+    width: 30px;
+  }
+
+  .menuButton {
+    width: 24px;
+    height: 24px;
+    gap: 4px;
+  }
+
+  .burgerLine {
+    width: 22px;
+  }
+
+  .menuButton[aria-expanded="true"] .burgerLine:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+  }
+
+  .menuButton[aria-expanded="true"] .burgerLine:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+  }
+
+  .iconLink,
+  .menuButton,
+  .headerButton {
+    flex: 0 0 auto;
+  }
+}
+
+@media (max-width: 420px) {
+  .headerInner {
+    gap: 8px;
+    padding: 0 8px 0 12px;
+  }
+
+  .mobileSearch,
+  .mobileMenu {
+    padding-inline: 12px;
+  }
+
+  .rightHeader {
+    gap: 8px;
+  }
+
+  .navIcon {
+    width: 22px;
+    height: 22px;
+  }
+
+  .signButton {
+    min-width: 66px;
+    padding-inline: 8px;
+    font-size: 14px;
+  }
+
+  .store {
+    font-size: 22px;
+  }
+
+  .logo {
+    width: 28px;
   }
 }

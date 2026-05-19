@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from 'react-router-dom';
 import './GameWindow.css';
 
 const gameData = {
@@ -307,10 +308,10 @@ export default function GamePage() {
         </div>
       </div>
 
-      <div className='show_more'>
+      <Link className='show_more' to='/achievements'>
       <p>Show more</p>
       <img src='./tabler-icon-arrow-narrow-right.png' alt='arrow'/>
-    </div>
+    </Link>
     </div>
 
           {/* Customer Reviews */}
