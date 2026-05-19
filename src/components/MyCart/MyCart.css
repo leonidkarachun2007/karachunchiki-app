@@ -432,7 +432,7 @@ h1 {
   }
 }
  
-@media (max-width: 420px) {
+@media (max-width: 440px) {
   .page-wrapper {
     padding: 18px 12px 28px;
   }
