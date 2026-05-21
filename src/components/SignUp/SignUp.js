@@ -11,7 +11,7 @@ export function SignUp() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    if (value.length >= 7) {
+    if (value.length >= 6) {
       setErrors(prev => ({ ...prev, [name]: false }));
     }
   };
