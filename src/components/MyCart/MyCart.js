@@ -23,7 +23,7 @@ export function MyCart() {
             <div className="image-container">
               <img src="sun.jpg" alt="The End of the Sun cover"/>
             </div>
-
+            
             <div className="game-info">
               <span className="game-type">Base Game</span>
               <h2 className="game-name">The End of the Sun</h2>

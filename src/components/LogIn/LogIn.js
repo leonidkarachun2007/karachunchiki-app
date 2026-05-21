@@ -1,8 +1,8 @@
-import './Registration.css';
+import './LogIn.css';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-export function Registration() {
+export function LogIn() {
     const [errors, setErrors] = useState({ name: false, password: false });
 
   const handleBlur = (e) => {
@@ -12,7 +12,7 @@ export function Registration() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    if (value.length >= 7) {
+    if (value.length >= 6) {
       setErrors(prev => ({ ...prev, [name]: false }));
     }
   };
@@ -76,4 +76,4 @@ export function Registration() {
   );
 }
 
-export default Registration;
+export default LogIn;

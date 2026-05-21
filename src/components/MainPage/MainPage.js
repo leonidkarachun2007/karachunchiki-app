@@ -1,4 +1,5 @@
 import './MainPage.css';
+import { Link } from 'react-router-dom';
 import GameCard from '../GameCard/GameCard';
 import { FiGift } from 'react-icons/fi';
 import { FiExternalLink } from 'react-icons/fi';
@@ -183,7 +184,7 @@ function MainPage () {
 
           <div className='heroBottom'>
             <span>FREE</span>
-            <button>Learn more</button>
+            <Link className='heroButton' to='/game'>Learn more</Link>
           </div>
 
         </div>
@@ -207,7 +208,7 @@ function MainPage () {
               <div className='promoCardBody'>
                 <h3>{card.title}</h3>
                 <p>{card.text}</p>
-                <button type='button'>See In Shop ↗</button>
+                <Link className='promoCardButton' to='/game'>See In Shop ↗</Link>
               </div>
             </div>
           ))}
@@ -218,7 +219,7 @@ function MainPage () {
         <h2 className='titleSection'>Winter Sale Spotlight</h2>
         <div className='winterRow'>
           {winterSaleCards.map(card => (
-            <div className='winterCard' key={card.id}>
+            <Link className='winterCard' key={card.id} to='/game'>
               <img className='winterCardImage' src={card.image} alt={card.title} />
               <span className='winterCardType'>Base Game</span>
               <h3>{card.title}</h3>
@@ -229,7 +230,7 @@ function MainPage () {
                   <span className='winterNewPrice'>UAH {card.price}</span>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
@@ -237,7 +238,7 @@ function MainPage () {
       <div className='weeklyDealsSection'>
         <div className='weeklyDealsRow'>
           {weeklyDealCards.map(card => (
-            <div className='weeklyDealCard' key={card.id}>
+            <Link className='weeklyDealCard' key={card.id} to='/game'>
               <div className='weeklyDealMedia'>
                 <img className='weeklyDealImage' src={card.image} alt={card.title} />
                 <span className='weeklyDealBadge'>Deals of the Week</span>
@@ -248,7 +249,7 @@ function MainPage () {
                 <span className='weeklyDealOldPrice'>UAH {card.oldPrice}</span>
                 <span className='weeklyDealNewPrice'>UAH {card.price}</span>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
@@ -265,14 +266,14 @@ function MainPage () {
 
           <div className='freeGamesRow'>
             {freeGamesCards.map(card => (
-              <div className='freeGameCard' key={card.id}>
+              <Link className='freeGameCard' key={card.id} to='/game'>
                 <div className='freeGameMedia'>
                   <img className='freeGameImage' src={card.image} alt={card.title} />
                   <span className={`freeGameBadge${card.isSoon ? ' isSoon' : ''}`}>{card.status}</span>
                 </div>
                 <h3>{card.title}</h3>
                 <p>{card.dateText}</p>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
@@ -287,10 +288,10 @@ function MainPage () {
           <div className='mobileStoreBody'>
             <h2>{mobileStoreCard.title}</h2>
             <p>{mobileStoreCard.text}</p>
-            <button className='mobileStoreButton' type='button'>
+            <Link className='mobileStoreButton' to='/news'>
               <span>Install Mobile</span>
               <FiExternalLink />
-            </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -306,7 +307,7 @@ function MainPage () {
 
               <div className='showcaseList'>
                 {column.items.map(item => (
-                  <div className={`showcaseItem${item.featured ? ' isFeatured' : ''}`} key={item.id}>
+                  <Link className={`showcaseItem${item.featured ? ' isFeatured' : ''}`} key={item.id} to='/game'>
                     <img className='showcaseItemImage' src={item.image} alt={item.title} />
 
                     <div className='showcaseItemBody'>
@@ -322,7 +323,7 @@ function MainPage () {
                         <p className='showcaseSubtitle'>{item.subtitle}</p>
                       )}
                     </div>
-                  </div>
+                  </Link>
                 ))}
               </div>
             </div>
