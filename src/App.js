@@ -13,12 +13,19 @@ import Achievement from './components/Achievement/Achievement';
 import GameWindow from './components/GameWindow/GameWindow';
 import News from './components/News/News';
 import SignUp from './components/SignUp/SignUp';
-import AccountConf from './components/AccountConf/AccountConf';
+import PaymentWindow from './components/PaymentWindow/PaymentWindow';
 
 function App() {
   return (
+
+    //     <div className="App">
+
+    //       <PaymentWindow/>
+
+    // </div>
     <BrowserRouter>
       <div className="App">
+        
         <Myheader />
         <main className="pageContent">
           <Routes>
