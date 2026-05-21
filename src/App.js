@@ -8,7 +8,7 @@ import Myheader from './components/Myheader/Myheader';
 import ProfilePage from "./components/ProfilePage/ProfilePage";
 import Support from './components/Support/Support';
 import MyWishlist from './components/MyWishlist/MyWishlist';
-import Registration from './components/Registration/Registration';
+import LogIn from './components/LogIn/LogIn';
 import Achievement from './components/Achievement/Achievement';
 import GameWindow from './components/GameWindow/GameWindow';
 import News from './components/News/News';
@@ -28,7 +28,7 @@ function App() {
             <Route path="/profile" element={<ProfilePage />} />
             <Route path="/wishlist" element={<MyWishlist />} />
             <Route path="/cart" element={<MyCart />} />
-            <Route path="/login" element={<Registration />} />
+            <Route path="/login" element={<LogIn />} />
             <Route path="/signup" element={<SignUp />} />
             <Route path="/achievements" element={<Achievement />} />
             <Route path="/game" element={<GameWindow />} />
