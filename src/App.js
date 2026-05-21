@@ -18,32 +18,33 @@ import PaymentWindow from './components/PaymentWindow/PaymentWindow';
 function App() {
   return (
 
-        <div className="App">
+    //     <div className="App">
 
-          <PaymentWindow/>
+    //       <PaymentWindow/>
 
-    </div>
-    // <BrowserRouter>
-    //   <div className="App">
-    //     <Myheader />
-    //     <main className="pageContent">
-    //       <Routes>
-    //         <Route path="/" element={<MainPage />} />
-    //         <Route path="/support" element={<Support />} />
-    //         <Route path="/news" element={<News />} />
-    //         <Route path="/profile" element={<ProfilePage />} />
-    //         <Route path="/wishlist" element={<MyWishlist />} />
-    //         <Route path="/cart" element={<MyCart />} />
-    //         <Route path="/login" element={<Registration />} />
-    //         <Route path="/signup" element={<SignUp />} />
-    //         <Route path="/achievements" element={<Achievement />} />
-    //         <Route path="/game" element={<GameWindow />} />
-    //         <Route path="*" element={<Navigate to="/" replace />} />
-    //       </Routes>
-    //     </main>
-    //     <Myfooter />
-    //   </div>
-    // </BrowserRouter>
+    // </div>
+    <BrowserRouter>
+      <div className="App">
+        
+        <Myheader />
+        <main className="pageContent">
+          <Routes>
+            <Route path="/" element={<MainPage />} />
+            <Route path="/support" element={<Support />} />
+            <Route path="/news" element={<News />} />
+            <Route path="/profile" element={<ProfilePage />} />
+            <Route path="/wishlist" element={<MyWishlist />} />
+            <Route path="/cart" element={<MyCart />} />
+            <Route path="/login" element={<Registration />} />
+            <Route path="/signup" element={<SignUp />} />
+            <Route path="/achievements" element={<Achievement />} />
+            <Route path="/game" element={<GameWindow />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
+          </Routes>
+        </main>
+        <Myfooter />
+      </div>
+    </BrowserRouter>
   );
 }
 

@@ -1,8 +1,13 @@
 import './MyCart.css';
 import { BsWindows } from "react-icons/bs";
 import { FaApple } from 'react-icons/fa';
+import { useState } from "react";
+import PaymentWindow from "../PaymentWindow/PaymentWindow";
+
 
 export function MyCart() {
+  const [open, setOpen] = useState(false);
+
   return (
     <div className="page-wrapper">
 
@@ -65,11 +70,14 @@ export function MyCart() {
           <p className="summary-note">
             Of their respective owners in the US and other countries. VAT included in all prices where applicable
           </p>
-          <button className="btn-checkout">Check Out</button>
+          <button className="btn-checkout" onClick={() => setOpen(true)}>Check Out</button>
         </div>
 
       </div>
+
+      {open && <PaymentWindow close={() => setOpen(false)} />}
     </div>
+    
   );
 }
 
