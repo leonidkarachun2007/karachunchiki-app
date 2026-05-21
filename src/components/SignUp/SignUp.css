@@ -298,9 +298,15 @@
 }
  
 @media (max-width: 440px) {
- 
+ .login-container-signup {
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+
   .login-title-signup {
-    padding: 0 16px 32px;  }
+    padding: 0 16px 32px; 
+  
+  }
  
   .login-card-signup {
     max-width: calc(100% - 20px);

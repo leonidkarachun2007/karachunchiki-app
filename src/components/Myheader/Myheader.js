@@ -1,6 +1,6 @@
 import './Myheader.css';
 import { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 import { FaSearch } from "react-icons/fa";
 import { CgProfile } from "react-icons/cg";
 import { FaRegHeart } from "react-icons/fa6";
@@ -8,7 +8,11 @@ import { RiShoppingCart2Line } from "react-icons/ri";
 import { TbWorld } from "react-icons/tb";
 
 function Myheader () {
+
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { pathname } = useLocation();
+
+  const hideSearch = ['/login', '/signup'].includes(pathname);
 
   const handleMobileMenuToggle = () => {
     setIsMobileMenuOpen((value) => !value);
@@ -33,10 +37,12 @@ function Myheader () {
           <NavLink to='/news'>News</NavLink>
         </nav>
 
-        <div className='searchHeader searchHeaderDesktop'>
-          <FaSearch className="search-icon" />
-          <input type='text' placeholder='Search store'/>
-        </div>
+        {!hideSearch && (
+          <div className='searchHeader searchHeaderDesktop'>
+            <FaSearch className="search-icon" />
+            <input type='text' placeholder='Search store'/>
+          </div>
+        )}
       </div>
 
       <div className='rightHeader'>
@@ -73,12 +79,14 @@ function Myheader () {
       <a href='/' onClick={(event) => event.preventDefault()}>Download</a>
     </div>
 
-    <div className='mobileSearch'>
-      <div className='searchHeader searchHeaderMobile'>
-        <FaSearch className="search-icon" />
-        <input type='text' placeholder='Search store'/>
+    {!hideSearch && (
+      <div className='mobileSearch'>
+        <div className='searchHeader searchHeaderMobile'>
+          <FaSearch className="search-icon" />
+          <input type='text' placeholder='Search store'/>
+        </div>
       </div>
-    </div>
+    )}
     </header>
   );
 };
