@@ -472,7 +472,7 @@ function handleCVVBlurMasterCard(e) {
       {opencompletionofpurchase &&
       <div onAnimationStart={close} id='container_payment2' >
         <div className='completionofpurchase'>
-        <img src='./opencompletionofpurchase_logo.png' alt='logo'/>
+        <img src='./_Ð¡Ð»Ð¾Ð¹_1.png' alt='logo'/>
         <h2>Thank you for buying our games!</h2>
         <p>An email receipt has been sent to you.</p>
         <p>If there is anything else you need, feel free to browse our shop! </p>
