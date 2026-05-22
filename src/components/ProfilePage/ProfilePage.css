@@ -88,6 +88,13 @@ height: clamp(8rem, 11vw, 11.0625rem);
     font-size: clamp(1.25rem, 2.5vw, 2.125rem);
     margin: 0;
 }
+
+#container_profile2 {
+    display: grid;
+    gap: 1.25rem;
+}
+
+
  
 .icons {
     display: flex;
