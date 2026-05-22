@@ -157,6 +157,9 @@
  
 .gp-btn-add,
 .gp-btn-wish {
+ display: flex;
+ align-items: center;
+ justify-content: center;
  width: 100%;
  padding: 0.625rem;
  border: none;
@@ -165,6 +168,7 @@
  font-size: clamp(0.8125rem, 1.2vw, 0.875rem);
  font-weight: 600;
  cursor: pointer;
+ text-decoration: none;
  transition: opacity 0.2s ease;
 }
  

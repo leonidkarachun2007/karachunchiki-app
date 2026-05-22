@@ -216,10 +216,10 @@ export default function GamePage() {
                 </div>
               ))}
             </div>
-            <div className="show_more">
+            <Link className="show_more" to="/achievements">
               <p>Show more</p>
               <img src="./tabler-icon-arrow-narrow-right.png" alt="arrow" />
-            </div>
+            </Link>
           </div>
 
           {/* Reviews */}
@@ -315,15 +315,15 @@ export default function GamePage() {
             </div>
           </div>
           <div className="gp-actions">
-            <button className="gp-btn-add">Add to cart</button>
-            <button className="gp-btn-wish">Wishlist</button>
+            <Link className="gp-btn-add" to="/cart">Add to cart</Link>
+            <Link className="gp-btn-wish" to="/wishlist">Wishlist</Link>
           </div>
           <div className="gp-age-badge">
             <div className="gp-age-number">{gameData.ageRating}</div>
             <div className="gp-age-info">
               <div className="gp-age-text">{gameData.ageRatingText}</div>
               <div className="gp-age-sub">{gameData.ageRatingSubtext}</div>
-              <a href="#" className="gp-age-link">www.pegi.info</a>
+              <a href="https://www.pegi.info" className="gp-age-link">www.pegi.info</a>
             </div>
           </div>
         </div>
