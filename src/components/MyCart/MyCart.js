@@ -1,4 +1,5 @@
 import './MyCart.css';
+import { Link } from 'react-router-dom';
 import { BsWindows } from "react-icons/bs";
 import { FaApple } from 'react-icons/fa';
 
@@ -48,7 +49,7 @@ export function MyCart() {
               <div className="price">UAH 0.00</div>
               <div className="buttons">
                 <button className="btn-remove">Remove</button>
-                <button className="btn-wishlist">Move to wishlist</button>
+                <Link className="btn-wishlist" to="/wishlist">Move to wishlist</Link>
               </div>
             </div>
           </div>

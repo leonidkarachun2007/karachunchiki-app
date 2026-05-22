@@ -366,7 +366,7 @@ function MainPage () {
         <p>5</p>
         <p>6</p>
         <p>...</p>
-        <p>20</p>
+        <p>90</p>
       </div>
 
       <div className='next'>
