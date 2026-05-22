@@ -18,11 +18,7 @@ import PaymentWindow from './components/PaymentWindow/PaymentWindow';
 function App() {
   return (
 
-    //     <div className="App">
 
-    //       <PaymentWindow/>
-
-    // </div>
     <BrowserRouter>
       <div className="App">
         

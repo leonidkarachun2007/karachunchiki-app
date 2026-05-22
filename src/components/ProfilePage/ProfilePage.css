@@ -88,6 +88,13 @@ height: clamp(8rem, 11vw, 11.0625rem);
     font-size: clamp(1.25rem, 2.5vw, 2.125rem);
     margin: 0;
 }
+
+#container_profile2 {
+    display: grid;
+    gap: 1.25rem;
+}
+
+
  
 .icons {
     display: flex;
@@ -99,6 +106,14 @@ height: clamp(8rem, 11vw, 11.0625rem);
 .icons img {
     width: clamp(1.75rem, 3vw, 2.625rem);
     height: clamp(1.75rem, 3vw, 2.625rem);
+    cursor: pointer;
+    transition: transform 0.1s ease;
+    
+}
+
+.icons img:hover {
+    transform: scale(1.05);
+    filter: brightness(150%); 
 }
  
  
@@ -129,6 +144,12 @@ height: clamp(8rem, 11vw, 11.0625rem);
     display: flex;
     flex-direction: column;
     gap: 0.375rem;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.achievements_card:hover {
+    transform: translateY(-3px);
 }
  
 .achievements_card img {
@@ -226,7 +247,11 @@ height: clamp(8rem, 11vw, 11.0625rem);
     flex: 0 0 calc((100% - 1rem) / 2);
     min-width: 0;
     box-sizing: border-box;
+    cursor: pointer;
 }
+
+
+
  
 .game_collection_card > img {
     width: 100%;
