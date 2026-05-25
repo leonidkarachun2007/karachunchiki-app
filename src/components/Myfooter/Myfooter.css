@@ -165,8 +165,6 @@
   }
 }
 
-/* базовые стили выше рассчитаны на обычный ноутбук / ПК */
-
 @media (min-width: 1440px) {
   .footerInner {
     padding-inline: 120px;
